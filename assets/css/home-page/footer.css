@@ -1,0 +1,64 @@
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #a0a1a3;
+    padding: 50px 20px;
+    box-shadow: 0px 0px 7px 2px #03030381;
+}
+
+.contact_box {
+    display: block;
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+
+
+/*--------------contact----------*/
+
+.contact {
+    display: flex;
+    float: left;
+    width: 30%;
+    color: #2c3632;
+    margin-left: 10px;
+}
+
+.contact_heading {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact_list {
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.contact_list li {
+    margin-bottom: 5px;
+}
+
+.contact_list a {
+    color: #68706f;
+}
+
+i {
+    margin-right: 10px;
+}
+
+
+/*------------------gMap------------------*/
+
+.google_map {
+    display: flex;
+    float: right;
+    width: 65%;
+    height: 80%;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    padding: 4px;
+    overflow: hidden;
+    margin: 10px;
+}
