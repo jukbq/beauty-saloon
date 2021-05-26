@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Сторінка галереї
+ * Template Name: gallery-page
  */
 ?>
 <?php get_header(); ?>
