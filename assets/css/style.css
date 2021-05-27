@@ -555,6 +555,13 @@ template {
   background-color: #d3d4d6;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #f0f1f4;
 }
@@ -577,23 +584,6 @@ h1,
 }
 
 /*------------------------slider----------------------*/
-.slider {
-  -webkit-box-shadow: 0px 0px 8px 1px black;
-          box-shadow: 0px 0px 8px 1px black;
-}
-
-.button_slider > div {
-  -webkit-box-shadow: 6px 7px 15px 2px black;
-          box-shadow: 6px 7px 15px 2px black;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.button_slider > div:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 /*------------------back image---------------------*/
 .au_img {
   display: -webkit-box;

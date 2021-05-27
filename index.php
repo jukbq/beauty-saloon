@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!----------------Social network-------------------->
 <main>
-    <section class="social_networks">
+    <!-- <section class="social_networks">
 
         <a class="fb" href="<?php echo get_theme_mod('facebook'); ?>" target="_blank">
             <div class="sn_box facebook">
@@ -47,15 +47,15 @@
             </div>
         </a>
     </section>
-
+ -->
     <!----------------Slider-------------------->
-
     <div class="slider">
         <?php
-        echo do_shortcode('[smartslider3 slider="2"]');
-        ?>
-
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
     </div>
+
+
     <!-----------------Welcome block---------------->
     <section class="about_us">
         <div class="top_left_img au_img left_img">
@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <!--------------------------info box------------------------->
+   <!--------------------------info box------------------------->
 
     <section class="info_box opacity">
 
@@ -156,6 +156,7 @@
         echo do_shortcode('[slick_logo_carousel id="810"]');
         ?>
     </section>
+                
 
 
 </main>

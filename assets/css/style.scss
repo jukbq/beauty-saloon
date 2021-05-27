@@ -3,6 +3,12 @@
 @import 'base/variable';
 @import 'base/standart';
 @import 'home-page/header';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f0f1f4;
 }
@@ -28,19 +34,6 @@ h1,
 
 
 /*------------------------slider----------------------*/
-
-.slider {
-    box-shadow: 0px 0px 8px 1px black;
-}
-
-.button_slider>div {
-    box-shadow: 6px 7px 15px 2px black;
-    transition: all 0.8s;
-}
-
-.button_slider>div:hover {
-    box-shadow: none;
-}
 
 
 /*------------------back image---------------------*/
