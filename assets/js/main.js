@@ -62,13 +62,16 @@ $(document).ready(function() {
 
         if (et >= wt && et + eh <= wh + wt) {
             return true;
+
         } else {
             return false;
+
         }
     };
 
     /*--------------------------------------------------*/
     $(document).scroll(function() {
+
 
         $('.opacity').each(function() {
             if (is_fully_shown($(this)) == true) {
@@ -77,7 +80,8 @@ $(document).ready(function() {
             }
         });
 
-        $('.abour_us_heading').each(function() {
+        $('.about_us_title').each(function() {
+
             if (is_fully_shown($(this)) == true) {
                 $(this).addClass('aus_heading')
 

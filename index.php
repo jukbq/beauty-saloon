@@ -19,22 +19,16 @@ echo do_shortcode('[smartslider3 slider="2"]');
             <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-right.png" alt="">
         </div>
 
-        <div class="abour_us_block">
-            <div class="abour_us_heading">
-                <?php the_field('abour_us_heading') ?>
+        <div class="about_us_block">
+            <h3 class="about_us_title">
+                <?php the_field('about_us_heading') ?>
+            </h3>
+            <div class="about_us_text_foto">
+                <div class="about_us_text">
+                <?php the_field('about_us_text') ?>
+          </div>
+                <img src="<?php the_field('about_foto') ?>">
             </div>
-
-            <div class="abour_us_text">
-                <?php the_field('abour_us_text') ?>
-            </div>
-
-            <div class="abour_foto foto">
-                <img src="<?php the_field('abour_foto') ?>">
-            </div>
-
-
-
-
         </div>
 
     </section>
@@ -84,7 +78,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         </div>
     </section>
 
-   <!--------------------------info box------------------------->
+    <!--------------------------info box------------------------->
 
     <section class="info_box opacity">
 
@@ -110,7 +104,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         echo do_shortcode('[slick_logo_carousel id="810"]');
         ?>
     </section>
-                
+
 
 
 </main>

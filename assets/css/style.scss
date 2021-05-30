@@ -5,6 +5,7 @@
 @import 'home-page/header';
 @import 'home-page/slider';
 @import 'home-page/sn';
+@import 'home-page/about-us';
 * {
     margin: 0;
     padding: 0;
@@ -24,11 +25,7 @@ a {
     }
 }
 
-.welcome,
-.text_box,
-.info_name,
-h1,
-.abour_us_heading {
+h3 {
     font-size: 60px;
     color: #2c3632;
     text-shadow: #0f14129a 5px 6px 7px;

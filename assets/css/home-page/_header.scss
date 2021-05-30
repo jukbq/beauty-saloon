@@ -4,8 +4,6 @@
     position: fixed;
     padding: 5px 120px;
     z-index: 100;
-    left: 0;
-    right: 0;
     transition: 1s;
     .custom-logo {
         @include size(65px, 65px);
@@ -20,8 +18,7 @@
             position: absolute;
             border-radius: 15px;
             padding-top: 64px;
-            top: -999px;
-            right: 10px;
+            @include trbl(-99px, 10px, 0, 0);
             visibility: collapse;
             transition: all 1s;
             z-index: -1;
@@ -63,6 +60,7 @@
                     ul {
                         width: 100%;
                         position: absolute;
+                        @include trbl(0px, 0%, 0, 0);
                         top: 0px;
                         right: 0%;
                         transition: 1s;

@@ -5,9 +5,7 @@ function bs_style() {
 	
 	wp_enqueue_style( 'service-style', get_template_directory_uri() . '/assets/css/service.css' );
 	wp_enqueue_style( 'gallery-style', get_template_directory_uri() . '/assets/css/gallery.css' );
-	wp_enqueue_style( 'animation-style', get_template_directory_uri() . '/assets/css/animation.css' );
-	wp_enqueue_style( 'nerwork-style', get_template_directory_uri() . '/assets/css/home-page/network.css' );
-	wp_enqueue_style( 'about-us-style', get_template_directory_uri() . '/assets/css/home-page/about-us.css' );
+
 	wp_enqueue_style( 'services-style', get_template_directory_uri() . '/assets/css/home-page/services.css' );
 	wp_enqueue_style( 'info_box-style', get_template_directory_uri() . '/assets/css/home-page/info_box.css' );
 	wp_enqueue_style( 'footer-style', get_template_directory_uri() . '/assets/css/home-page/footer.css' );

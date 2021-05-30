@@ -1,0 +1,51 @@
+.about_us {
+    position: relative;
+    height: 700px;
+    .about_us_block {
+        @extend %flex_row_c;
+        @include size(1000px, 100%);
+        position: relative;
+        transform-style: preserve-3d;
+        margin: auto;
+        .about_us_title {
+            position: absolute;
+            @include trbl(182px, 0, 0, 118px);
+            transition: all 1s;
+            opacity: 1;
+            z-index: 5;
+        }
+        .aus_heading {
+            @include trbl(115px, 0, 0, 118px);
+            opacity: 1;
+            z-index: 5;
+        }
+        .about_us_text_foto {
+            @extend %flex_row_a;
+            @include size(auto, auto);
+            position: absolute;
+            @include trbl(120px, 0, 0, 0px);
+            opacity: 1;
+            border-radius: 35% 0 10% 0;
+            padding: 0px 0px 0px 15px;
+            box-shadow: 5px 6px 10px 1px black;
+            background-color: #d3d4d6ba;
+            z-index: 3;
+            .about_us_text {
+                width: 60%;
+                p {
+                    text-indent: 30px;
+                    text-align: justify;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #2c3632;
+                    margin: 5px 5px 5px 25px;
+                    letter-spacing: 0.8px;
+                }
+            }
+            img {
+                @include size(auto, 100%);
+                border-radius: 0 0 10% 0;
+            }
+        }
+    }
+}
