@@ -1,19 +1,20 @@
 .wraper {
-    @extend %flex_row_a;
-    @include size(100%, 90px);
+    @extend %flex_row_b;
+    @include size(100%, 70px);
     position: fixed;
+    padding: 5px 120px;
     z-index: 100;
     left: 0;
     right: 0;
     transition: 1s;
     .custom-logo {
-        @include size(80px, 80px);
+        @include size(65px, 65px);
         filter: $filter;
         z-index: 5;
     }
     .wrap_menu {
         position: relative;
-        @include size(65px, 65px);
+        @include size(55px, 55px);
         .head_menu {
             @include size(300px, auto);
             position: absolute;
@@ -94,19 +95,25 @@
             }
         }
         .menu_icon {
-            @include size(60px, 60px);
+            @include size(55px, 55px);
             @extend %flex_collum_c;
             border: 3px solid #899593;
             transform-style: preserve-3d;
             border-radius: 15px;
-            transition: all 2s;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0, 0.3, 1, 0.31);
+            transition-delay: 0s;
             transform: rotateZ( 0deg) translate(0px) rotateY( 0deg) rotateX( 0deg);
             .burger-line {
-                @include size(50px, 3px);
+                @include size(40px, 3px);
                 background-color: #899593;
-                transition: all 3s;
+                transition: all 1.2s;
                 opacity: 1;
                 transform: rotateZ( 0deg) translate(0px) rotateY( 0deg) rotateX( 0deg);
+            }
+             :nth-child(2) {
+                transition: all 0s;
             }
         }
         &:hover>.menu_icon {
@@ -114,14 +121,14 @@
             transform: rotateZ( 90deg) translate(0px) rotateY( 180deg) rotateX( -180deg);
              :nth-child(1) {
                 transform: rotateZ( 45deg);
-                margin-top: 28px;
+                margin-top: 25px;
             }
              :nth-child(2) {
                 opacity: 0;
             }
              :nth-child(3) {
                 transform: rotateZ( -45deg);
-                margin-bottom: 31px;
+                margin-bottom: 21px;
             }
         }
         &:hover>.head_menu {
