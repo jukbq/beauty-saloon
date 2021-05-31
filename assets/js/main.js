@@ -54,20 +54,30 @@ $(document).ready(function() {
 
 
     /*----------------------Animation--------------------*/
-    function is_fully_shown(target) {
-        let wt = $(window).scrollTop();
-        let wh = $(window).height();
-        let eh = $(target).height();
-        let et = $(target).offset().top;
+    /*    function is_fully_shown(target) {
+           let wt = $(window).scrollTop();
+           let wh = $(window).height();
+           let eh = $(target).height();
+           let et = $(target).offset().top;
 
-        if (et >= wt && et + eh <= wh + wt) {
-            return true;
+           if (et >= wt && et + eh <= wh + wt) {
+               return true;
 
-        } else {
-            return false;
+           } else {
+               return false;
 
+           }
+       } */
+    $(window).scroll(function() {
+        var wt = $(window).scrollTop();
+        var wh = $(window).height();
+        var et = $('.about_us_title').offset().top;
+        var eh = $('.about_us_title').outerHeight();
+        var dh = $(document).height();
+        if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+            console.log('Элемент показан');
         }
-    };
+    })
 
     /*--------------------------------------------------*/
     $(document).scroll(function() {
