@@ -2,14 +2,36 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if ($(document).scrollTop() > 100) {
-            $(".wraper").addClass('wrapper_color')
+            $(".header").addClass('header_color')
             $(".head_menu").addClass('wrapper_head_menu')
 
         } else {
-            $(".wraper").removeClass('wrapper_color')
+            $(".header").removeClass('header_color')
             $(".head_menu").removeClass('wrapper_head_menu')
 
         }
+
+        function is_fully_shown(target) {
+            var wt = $(window).scrollTop();
+            var wh = $(window).height();
+            var eh = $(target).height();
+            var et = $(target).offset().top;
+
+            if (et >= wt && et + eh <= wh + wt) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        $('.block_title').each(function() {
+
+            if (is_fully_shown($(this)) == true) {
+                $(this).addClass('aus_title')
+                console.log('111123456');
+
+            }
+        });
+
     });
 
     /*-------------------animation services------------*/
@@ -49,75 +71,6 @@ $(document).ready(function() {
     $('.sn_box').mouseout(function() {
         $(this).removeClass('sn_box_enlarge')
     });
-
-
-
-
-    /*----------------------Animation--------------------*/
-    /*    function is_fully_shown(target) {
-           let wt = $(window).scrollTop();
-           let wh = $(window).height();
-           let eh = $(target).height();
-           let et = $(target).offset().top;
-
-           if (et >= wt && et + eh <= wh + wt) {
-               return true;
-
-           } else {
-               return false;
-
-           }
-       } */
-    $(window).scroll(function() {
-        var wt = $(window).scrollTop();
-        var wh = $(window).height();
-        var et = $('.about_us_title').offset().top;
-        var eh = $('.about_us_title').outerHeight();
-        var dh = $(document).height();
-        if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
-            console.log('Элемент показан');
-        }
-    })
-
-    /*--------------------------------------------------*/
-    $(document).scroll(function() {
-
-
-        $('.opacity').each(function() {
-            if (is_fully_shown($(this)) == true) {
-                $(this).addClass('action')
-
-            }
-        });
-
-        $('.about_us_title').each(function() {
-
-            if (is_fully_shown($(this)) == true) {
-                $(this).addClass('aus_heading')
-
-            }
-        });
-        $('.abour_us_text').each(function() {
-            if (is_fully_shown($(this)) == true) {
-                $(this).addClass('aus_text')
-            }
-        });
-
-        $('.service_box:nth-child(odd)').each(function() {
-            if (is_fully_shown($(this)) == true) {
-                $(this).addClass('slideRight')
-            }
-        });
-
-        $('.service_box:nth-child(even)').each(function() {
-            if (is_fully_shown($(this)) == true) {
-                $(this).addClass('slideLeft')
-
-            }
-        });
-    });
-
-
 
 
     let sn = 0

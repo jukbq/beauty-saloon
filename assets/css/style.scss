@@ -6,6 +6,29 @@
 @import 'home-page/slider';
 @import 'home-page/sn';
 @import 'home-page/about-us';
+
+/*------------------fonts-----------------------
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Play', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+--------------------------------*/
+
+.big_titel {
+    font-size: 84px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.block_title {
+    font-size: 60px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 600;
+    color: #2c3632;
+    text-shadow: #0f14129a 5px 6px 7px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,12 +46,6 @@ a {
         size: 25px;
         weight: bold;
     }
-}
-
-h3 {
-    font-size: 60px;
-    color: #2c3632;
-    text-shadow: #0f14129a 5px 6px 7px;
 }
 
 

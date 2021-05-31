@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <main>
 
     <!----------------Slider-------------------->
@@ -8,7 +9,6 @@
 echo do_shortcode('[smartslider3 slider="2"]');
 ?>
     </div>
-
 
     <!-----------------Welcome block---------------->
     <section class="about_us">
@@ -20,13 +20,13 @@ echo do_shortcode('[smartslider3 slider="2"]');
         </div>
 
         <div class="about_us_block">
-            <h3 class="about_us_title">
-                <?php the_field('about_us_heading') ?>
-            </h3>
+            <h3 class="block_title">
+                             <?php the_field('about_us_title') ?>
+</h3>
             <div class="about_us_text_foto">
                 <div class="about_us_text">
-                <?php the_field('about_us_text') ?>
-          </div>
+                    <?php the_field('about_us_text') ?>
+                </div>
                 <img src="<?php the_field('about_foto') ?>">
             </div>
         </div>
