@@ -12,23 +12,34 @@ $(document).ready(function() {
         }
 
         function is_fully_shown(target) {
-            var wt = $(window).scrollTop();
-            var wh = $(window).height();
-            var eh = $(target).height();
-            var et = $(target).offset().top;
+            let wt = $(window).scrollTop();
+            let wh = $(window).height();
+            let eh = $(target).height();
+            let et = $(target).offset().top;
 
             if (et >= wt && et + eh <= wh + wt) {
                 return true;
-            } else {
+            } else if (wt == 0) {
                 return false;
             }
-        }
-        $('.block_title').each(function() {
 
+        }
+
+        $('.block_title').each(function() {
             if (is_fully_shown($(this)) == true) {
                 $(this).addClass('aus_title')
-                console.log('111123456');
-
+            } else {
+                $(this).removeClass('aus_title')
+            }
+        });
+        $('.about_us_text_foto').each(function() {
+            if (is_fully_shown($(this)) == true) {
+                $(this).addClass('aus_text_foto')
+            }
+        });
+        $('.service_elenebt').each(function() {
+            if (is_fully_shown($(this)) == true) {
+                $(this).addClass('service_elenebt_open')
             }
         });
 
@@ -36,34 +47,6 @@ $(document).ready(function() {
 
     /*-------------------animation services------------*/
 
-    $('.service_box:nth-child(odd)').mouseover(function() {
-        let service = $(this).find('.icon_service');
-        let text = $(this).find('.text_box');
-        let frame = $(this).find('.frame_icon');
-        $(frame).addClass('active_rigth')
-        $(service).addClass('big')
-        $(text).addClass('tb_animation_left')
-    });
-
-    $('.service_box:nth-child(even)').mouseover(function() {
-        let service = $(this).find('.icon_service');
-        let text = $(this).find('.text_box');
-        let frame = $(this).find('.frame_icon');
-        $(frame).addClass('active_left')
-        $(service).addClass('big')
-        $(text).addClass('tb_animation_right')
-    });
-
-    $('.service_box').mouseout(function() {
-        let frame = $(this).find('.frame_icon');
-        let service = $(this).find('.icon_service');
-        let text = $(this).find('.text_box');
-        $(frame).removeClass('active_rigth')
-        $(frame).removeClass('active_left')
-        $(service).removeClass('big')
-        $(text).removeClass('tb_animation_left')
-        $(text).removeClass('tb_animation_right')
-    });
 
     $('.sn_box').mouseover(function() {
         $(this).addClass('sn_box_enlarge')

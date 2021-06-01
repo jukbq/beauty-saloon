@@ -28,3 +28,17 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+%flex_collum_csb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex_collum_fs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

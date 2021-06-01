@@ -20,9 +20,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
         </div>
 
         <div class="about_us_block">
-            <h3 class="block_title">
+            <h3 class="block_title au_title">
                              <?php the_field('about_us_title') ?>
-</h3>
+            </h3>
             <div class="about_us_text_foto">
                 <div class="about_us_text">
                     <?php the_field('about_us_text') ?>
@@ -42,32 +42,32 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <div class="top_right_img au_img right_img">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/top-right.png" alt="">
         </div>
+         <h3 class="block_title">
+                             <?php the_field('service_title') ?>
+            </h3>
 
-        <div class="conteiner">
+        <div class="service_block">
             <?php
-            $featured_posts = get_field('conteiner');
-            if ($featured_posts) : ?>
-            <ul class="conteiner">
+            $featured_posts = get_field('service_block');
+            if ($featured_posts) :
+             ?>
+            <ul class="service_elenebt">
                 <?php foreach ($featured_posts as $post) :
-
-                        setup_postdata($post); ?>
-                <li class="service_box opacity">
-                    <a href="<?php the_field('serv_page') ?>">
+                        setup_postdata($post); 
+                        ?>
+                <li class="service_box">
+                    <a href="<?php the_field('serv_page')?>">
                         <div class="icon">
                             <div class="icon_service">
-                                <img src="<?php the_field('icon_service_img'); ?>">
+                                <img src="<?php the_field('icon_service_img');?>" >
                             </div>
                             <div class="frame_icon"></div>
                         </div>
-                        <div class="text_box">
-
-                            <p class="text">
-                                <?php the_field('text_box_t1'); ?>
-                            </p>
+                        <div class="block_title">
+                            <?php the_field('service_name'); ?>
                         </div>
 
                     </a>
-
                 </li>
                 <?php endforeach; ?>
             </ul>

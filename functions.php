@@ -5,8 +5,6 @@ function bs_style() {
 	
 	wp_enqueue_style( 'service-style', get_template_directory_uri() . '/assets/css/service.css' );
 	wp_enqueue_style( 'gallery-style', get_template_directory_uri() . '/assets/css/gallery.css' );
-
-	wp_enqueue_style( 'services-style', get_template_directory_uri() . '/assets/css/home-page/services.css' );
 	wp_enqueue_style( 'info_box-style', get_template_directory_uri() . '/assets/css/home-page/info_box.css' );
 	wp_enqueue_style( 'footer-style', get_template_directory_uri() . '/assets/css/home-page/footer.css' );
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css' );

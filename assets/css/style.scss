@@ -6,6 +6,7 @@
 @import 'home-page/slider';
 @import 'home-page/sn';
 @import 'home-page/about-us';
+@import 'home-page/service';
 
 /*------------------fonts-----------------------
 font-family: 'IBM Plex Serif', serif;
@@ -26,7 +27,23 @@ font-family: 'Roboto Slab', serif;
     font-family: 'IBM Plex Serif', serif;
     font-weight: 600;
     color: #2c3632;
-    text-shadow: #0f14129a 5px 6px 7px;
+    position: relative;
+    @include trbl(100px, 0, 0, 0);
+    transition: all 1s;
+    visibility: collapse;
+    z-index: 1;
+}
+
+.aus_title {
+    top: 50px;
+    visibility: visible;
+    z-index: 1;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    font-weight: 100;
 }
 
 * {
