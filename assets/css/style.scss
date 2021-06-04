@@ -8,7 +8,8 @@
 @import 'home-page/about-us';
 @import 'home-page/service';
 @import 'home-page/fotogalery';
-@import 'other-page/galleru_page';
+@import 'home-page/footer';
+@import 'other-page/galleru_album';
 
 /*-------------------------------------------------*/
 
@@ -58,13 +59,14 @@ p {
     font-size: 18px;
     font-family: 'Play', sans-serif;
     font-weight: 100;
+    color: #2c3632;
 }
 
 a {
     text-decoration: none;
     color: #2c3632;
     font: {
-        size: 25px;
+        size: 18px;
         weight: bold;
     }
 }
@@ -105,5 +107,16 @@ a {
     }
     img {
         @include size(auto, 100%);
+    }
+}
+
+
+/*----------------------------------------------*/
+
+.brends {
+    @include size(100%, 400px);
+    position: relative;
+    .lswss-wrap {
+        padding: 120px 0;
     }
 }

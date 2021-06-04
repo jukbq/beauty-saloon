@@ -1,0 +1,27 @@
+.gallery-page {
+    position: relative;
+    @include size(100%, auto);
+    padding: 100px 0;
+    .foto_block {
+        @include size(1440px, auto);
+        position: relative;
+        margin: auto;
+        text-align: center;
+        .big_titel {
+            margin-bottom: 100px;
+        }
+        .back_hone {
+            position: absolute;
+            font-size: 40px;
+            left: 0;
+            padding: 5px 20px;
+            color: #2c3632;
+            border: 2px double #2c3632;
+            border-radius: 30px;
+            background-color: #d3d4d6;
+        }
+        .gallery {
+            margin-top: 180px;
+        }
+    }
+}

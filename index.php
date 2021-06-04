@@ -77,9 +77,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
         </div>
     </section>
 
-    <!--------------------------info box------------------------->
+    <!--------------------------foto_galery------------------------>
 
-    <section class="foto_galery">
+    <section id="foto_galery" class="foto_galery">
 
        <div class="body_img_left top">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/top-left.png" alt="">
@@ -130,9 +130,10 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
     <!-----------------------brands--------------------->
     <section class="brends">
-     <!--    <?php
-        echo do_shortcode('[slick_logo_carousel id="810"]');
-        ?> -->
+         <div class="body_img_right top">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-right.png" alt="">
+        </div>
+    <?php echo do_shortcode('[slick_logo_carousel id="480"]'); ?>->
     </section>
 
 

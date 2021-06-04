@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     });
 
-    /*-------------------animation services------------*/
+
 
 
     $('.sn_box').mouseover(function() {

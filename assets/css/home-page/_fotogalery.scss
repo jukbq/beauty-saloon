@@ -28,8 +28,9 @@
                     padding: 15px;
                     background-image: radial-gradient(#899593ea, #6f6f6f);
                     background-size: cover;
+                    background-position: center;
                     img {
-                        @include size(auto, 100%);
+                        @include size(100%, auto);
                     }
                 }
                 .frame_icon {

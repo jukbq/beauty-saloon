@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.services .service_elenebt, .foto_galery .gallery_elenebt, .gallery_page #foogallery-album-144 ul {
+.services .service_elenebt, .foto_galery .gallery_elenebt, footer .footer_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +376,7 @@ template {
           align-items: center;
 }
 
-.header .wraper .wrap_menu .menu_icon, .about_us .about_us_block, .gallery_page, .gallery_page #foogallery-album-144 ul li {
+.header .wraper .wrap_menu .menu_icon, .about_us .about_us_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,8 +459,8 @@ template {
   position: absolute;
   border-radius: 15px;
   padding-top: 64px;
-  top: -99px;
-  right: 10px;
+  top: -199px;
+  right: 246px;
   bottom: 0;
   left: 0;
   visibility: collapse;
@@ -520,11 +520,9 @@ template {
   width: 100%;
   position: absolute;
   top: 0px;
-  right: 0%;
+  right: 0px;
   bottom: 0;
-  left: 0;
-  top: 0px;
-  right: 0%;
+  left: -300px;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition: all 0.3s;
@@ -955,11 +953,12 @@ template {
   padding: 15px;
   background-image: radial-gradient(#899593ea, #6f6f6f);
   background-size: cover;
+  background-position: center;
 }
 
 .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
@@ -1008,38 +1007,75 @@ template {
   line-height: 90px;
 }
 
-.gallery_page {
-  padding-top: 100px;
-  width: 1440px;
+footer {
+  width: 100%;
   height: auto;
+  background-color: #a0a1a3;
+  padding: 50px 20px;
+}
+
+footer .footer_titel {
+  font-size: 32px;
+}
+
+footer .footer_block {
+  width: 1440px;
+  height: 100%;
   margin: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.gallery_page #foogallery-album-144 {
-  width: 100%;
-  margin: 50px 0;
-}
-
-.gallery_page #foogallery-album-144 ul {
-  width: 100%;
+footer .footer_block .contact ul {
   list-style: none;
 }
 
-.gallery_page #foogallery-album-144 ul li {
-  width: 350px;
-  height: 350px;
-  border-radius: 25% 0 10% 0;
-  text-align: center;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  background: #abbaab;
-  background: -webkit-gradient(linear, left bottom, left top, from(#c4c5c7), to(#f0f1f400));
-  background: linear-gradient(to top, #c4c5c7, #f0f1f400);
+footer .footer_block .contact ul .contact_list {
+  padding-top: 10px;
+  margin-bottom: 20px;
 }
 
-.gallery_page #foogallery-album-144 ul li:hover {
-  -webkit-box-shadow: 0 0 20px 3px #0303037a;
-          box-shadow: 0 0 20px 3px #0303037a;
+footer .footer_block .contact ul .contact_list li {
+  font-size: 16px;
+}
+
+footer .footer_block .contact .google_map {
+  border: 1px solid black;
+}
+
+.gallery-page {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+
+.gallery-page .foto_block {
+  width: 1440px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.gallery-page .foto_block .big_titel {
+  margin-bottom: 100px;
+}
+
+.gallery-page .foto_block .back_hone {
+  position: absolute;
+  font-size: 40px;
+  left: 0;
+  padding: 5px 20px;
+  color: #2c3632;
+  border: 2px double #2c3632;
+  border-radius: 30px;
+  background-color: #d3d4d6;
+}
+
+.gallery-page .foto_block .gallery {
+  margin-top: 180px;
 }
 
 /*-------------------------------------------------*/
@@ -1092,12 +1128,13 @@ p {
   font-size: 18px;
   font-family: 'Play', sans-serif;
   font-weight: 100;
+  color: #2c3632;
 }
 
 a {
   text-decoration: none;
   color: #2c3632;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -1148,5 +1185,16 @@ a {
 .body_img_right img {
   width: auto;
   height: 100%;
+}
+
+/*----------------------------------------------*/
+.brends {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.brends .lswss-wrap {
+  padding: 120px 0;
 }
 /*# sourceMappingURL=style.css.map */

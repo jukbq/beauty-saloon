@@ -21,7 +21,7 @@
                 position: absolute;
                 border-radius: 15px;
                 padding-top: 64px;
-                @include trbl(-99px, 10px, 0, 0);
+                @include trbl(-199px, 246px, 0, 0);
                 visibility: collapse;
                 transition: all 1s;
                 z-index: -1;
@@ -63,9 +63,7 @@
                         ul {
                             width: 100%;
                             position: absolute;
-                            @include trbl(0px, 0%, 0, 0);
-                            top: 0px;
-                            right: 0%;
+                            @include trbl(0px, 0px, 0, -300px);
                             transition: 1s;
                             transition: all 0.3s;
                             opacity: 0;

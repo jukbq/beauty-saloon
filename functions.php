@@ -23,8 +23,9 @@ function bs_template ( $template ) {
 			$template = $new_template ;
 	;}	
 
-	if( is_page('gallery')  ){
-		if ( $new_template = locate_template( array( '/page/gallery.php' ) ) )
+
+	if( is_page('gallery-page')  ){
+		if ( $new_template = locate_template( array( '/page/gallery-page.php' ) ) )
 			$template = $new_template ;
 	
 	};
@@ -58,4 +59,11 @@ add_theme_support( 'custom-logo', [
 ] );
 }
 
+function root_acf_format_value( $value, $post_id, $field ) {
+	
+	$value = do_shortcode($value);
+	
+	return $value;
+}
 
+add_filter('acf/format_value/type=textarea', 'root_acf_format_value', 10, 3);
