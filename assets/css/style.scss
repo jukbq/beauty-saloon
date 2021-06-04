@@ -7,6 +7,21 @@
 @import 'home-page/sn';
 @import 'home-page/about-us';
 @import 'home-page/service';
+@import 'home-page/fotogalery';
+@import 'other-page/galleru_page';
+
+/*-------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f1f4;
+}
+
 
 /*------------------fonts-----------------------
 font-family: 'IBM Plex Serif', serif;
@@ -18,7 +33,6 @@ font-family: 'Roboto Slab', serif;
 .big_titel {
     font-size: 84px;
     font-family: 'Playfair Display', serif;
-    font-style: italic;
     font-weight: 400;
 }
 
@@ -46,16 +60,6 @@ p {
     font-weight: 100;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f0f1f4;
-}
-
 a {
     text-decoration: none;
     color: #2c3632;
@@ -66,39 +70,40 @@ a {
 }
 
 
-/*------------------------slider----------------------*/
+/*-----------------------------------------------------*/
 
-
-/*------------------back image---------------------*/
-
-.au_img {
-    display: flex;
+.body_img_left {
+    @include size(356px, 320px);
     position: absolute;
     z-index: -1;
+    &.top {
+        top: 0;
+        left: 0;
+    }
+    &.bottom {
+        bottom: 0;
+        left: 0;
+        transform: rotateZ( 180deg) translate(0px) rotateY( 180deg) rotateX( 0deg);
+    }
+    img {
+        @include size(auto, 100%);
+    }
 }
 
-.left_img {
-    width: 350px;
-    height: 320px;
-}
-
-.top_right_img img,
-.bottom_right_img img {
-    width: 482px;
-    height: 365px;
-}
-
-.bottom_left_img {
-    left: 0px;
-    bottom: 0px;
-}
-
-.top_right_img {
-    right: 0px;
-    top: 0px;
-}
-
-.bottom_right_img {
-    right: 0px;
-    bottom: 0px;
+.body_img_right {
+    @include size(389px, 365px);
+    position: absolute;
+    z-index: -1;
+    &.bottom {
+        right: 0;
+        bottom: 0;
+    }
+    &.top {
+        right: 0;
+        top: 0;
+        transform: rotateZ( 180deg) translate(0px) rotateY( 180deg) rotateX( 0deg);
+    }
+    img {
+        @include size(auto, 100%);
+    }
 }

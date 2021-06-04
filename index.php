@@ -12,10 +12,10 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
     <!-----------------Welcome block---------------->
     <section class="about_us">
-        <div class="top_left_img au_img left_img">
+        <div class="body_img_left top">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/top-left.png" alt="">
         </div>
-        <div class="bottom_right_img au_img right_img">
+        <div class="body_img_right bottom">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-right.png" alt="">
         </div>
 
@@ -35,12 +35,11 @@ echo do_shortcode('[smartslider3 slider="2"]');
     <!---------------services---------------->
 
     <section id="services" class="services">
-
-        <div class="bottom_left_img au_img left_img">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-left.png" alt="">
+  <div class="body_img_left bottom">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/top-left.png" alt="">
         </div>
-        <div class="top_right_img au_img right_img">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/top-right.png" alt="">
+        <div class="body_img_right top">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-right.png" alt="">
         </div>
          <h3 class="block_title">
                              <?php the_field('service_title') ?>
@@ -80,29 +79,60 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
     <!--------------------------info box------------------------->
 
-    <section class="info_box opacity">
+    <section class="foto_galery">
 
-        <div class="top_left_img au_img left_img">
+       <div class="body_img_left top">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/top-left.png" alt="">
         </div>
-        <a class="gallery_page" href="<?php the_field('gallery_page') ?>">
-            <h1 class="gallery_name"> <?php the_field('gallery_name') ?></h1>
-        </a>
-        <div class="gallery">
+        <div class="body_img_right bottom">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-right.png" alt="">
+        </div>
+
+         <h3 class="block_title">
+                             <?php the_field('foto_galery_title') ?>
+            </h3>
+      <div class="gallery_block">
             <?php
-            echo do_shortcode('[foogallery id="589"]');
-            ?>
+            $featured_posts = get_field('gallery_block');
+            if ($featured_posts) :
+             ?>
+            <ul class="gallery_elenebt">
+                <?php foreach ($featured_posts as $post) :
+                        setup_postdata($post); 
+                        ?>
+                <li class="gallery_box">
+                    <a href="<?php the_field('gallery_page')?>">
+                        <div class="icon">
+                            <div class="icon_gallery">
+                                <img src="<?php the_field('icon_gallery_img');?>" >
+                            </div>
+                            <div class="frame_icon"></div>
+                        </div>
+                        <div class="block_title">
+                            <?php the_field('gallery_name'); ?>
+                        </div>
+
+                    </a>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+            <?php
+                wp_reset_postdata(); ?>
+            <?php endif; ?>
 
         </div>
+</div>
+
+       </div>
 
 
     </section>
 
     <!-----------------------brands--------------------->
     <section class="brends">
-        <?php
+     <!--    <?php
         echo do_shortcode('[slick_logo_carousel id="810"]');
-        ?>
+        ?> -->
     </section>
 
 

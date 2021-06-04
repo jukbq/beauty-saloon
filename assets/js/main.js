@@ -11,35 +11,35 @@ $(document).ready(function() {
 
         }
 
-        function is_fully_shown(target) {
-            let wt = $(window).scrollTop();
-            let wh = $(window).height();
-            let eh = $(target).height();
-            let et = $(target).offset().top;
+        function is_shown(target) {
+            var wt = $(window).scrollTop();
+            var wh = $(window).height();
+            var eh = $(target).outerHeight();
+            var et = $(target).offset().top;
 
-            if (et >= wt && et + eh <= wh + wt) {
+            if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
                 return true;
-            } else if (wt == 0) {
+            } else {
                 return false;
             }
-
         }
 
         $('.block_title').each(function() {
-            if (is_fully_shown($(this)) == true) {
+            if (is_shown($(this)) == true) {
                 $(this).addClass('aus_title')
             } else {
                 $(this).removeClass('aus_title')
             }
         });
         $('.about_us_text_foto').each(function() {
-            if (is_fully_shown($(this)) == true) {
+            if (is_shown($(this)) == true) {
                 $(this).addClass('aus_text_foto')
             }
         });
-        $('.service_elenebt').each(function() {
-            if (is_fully_shown($(this)) == true) {
+        $('.service_box, .gallery_box').each(function() {
+            if (is_shown($(this)) == true) {
                 $(this).addClass('service_elenebt_open')
+
             }
         });
 

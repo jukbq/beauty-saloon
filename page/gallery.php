@@ -8,17 +8,16 @@
     
 
 
+<div class="gallery_page">
 
+<div class="big_titel"><?php the_field( 'gallery_titel' ); ?></div>
 
-<div class="gallery_titel"><?php the_field( 'gallery_titel' ); ?></div>
+                <?php
+echo do_shortcode('[foogallery-album id="144"]');
+?>
 
-<div class="gallery_album">
-  <?php
-     echo do_shortcode('[foogallery-album id="421"]');
-           ?>
-</div>
    
-   
+   </div>
 
 <?php get_footer(); ?>
 
