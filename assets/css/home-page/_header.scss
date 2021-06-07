@@ -22,9 +22,10 @@
                 border-radius: 15px;
                 padding-top: 64px;
                 @include trbl(-199px, 246px, 0, 0);
+                border: 1px solid black;
                 visibility: collapse;
                 transition: all 1s;
-                z-index: -1;
+                z-index: 0;
                 #menu_1 {
                     display: block;
                     @include size(100%, auto);
@@ -33,6 +34,7 @@
                     padding: 0px;
                     list-style: none;
                     position: relative;
+                    z-index: -1;
                     li {
                         display: block;
                         @include size(100%, auto);
@@ -57,13 +59,13 @@
                             background: #899593;
                         }
                         &:hover ul {
-                            right: 100%;
+                            left: 300px;
                             opacity: 1;
                         }
                         ul {
                             width: 100%;
                             position: absolute;
-                            @include trbl(0px, 0px, 0, -300px);
+                            @include trbl(0px, 0px, 0, 0);
                             transition: 1s;
                             transition: all 0.3s;
                             opacity: 0;
@@ -132,6 +134,7 @@
             }
             &:hover>.head_menu {
                 top: 0px;
+                left: -245px;
                 visibility: visible;
             }
         }

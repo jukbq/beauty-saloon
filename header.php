@@ -24,18 +24,13 @@
 
         <div class="wraper">
             <?php the_custom_logo( 0 ); ?>
-
-
-
             <nav class="wrap_menu">
-
                 <div class="menu_icon">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                 </div>
                 <?php 
-            
                 if( has_nav_menu( 'header_menu' ) ){
                 wp_nav_menu([
                     'theme_location' => 'header_menu',

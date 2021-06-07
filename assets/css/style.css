@@ -463,10 +463,11 @@ template {
   right: 246px;
   bottom: 0;
   left: 0;
+  border: 1px solid black;
   visibility: collapse;
   -webkit-transition: all 1s;
   transition: all 1s;
-  z-index: -1;
+  z-index: 0;
 }
 
 .header .wraper .wrap_menu .head_menu #menu_1 {
@@ -478,6 +479,7 @@ template {
   padding: 0px;
   list-style: none;
   position: relative;
+  z-index: -1;
 }
 
 .header .wraper .wrap_menu .head_menu #menu_1 li {
@@ -512,7 +514,7 @@ template {
 }
 
 .header .wraper .wrap_menu .head_menu #menu_1 li:hover ul {
-  right: 100%;
+  left: 300px;
   opacity: 1;
 }
 
@@ -522,7 +524,7 @@ template {
   top: 0px;
   right: 0px;
   bottom: 0;
-  left: -300px;
+  left: 0;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition: all 0.3s;
@@ -615,6 +617,7 @@ template {
 
 .header .wraper .wrap_menu:hover > .head_menu {
   top: 0px;
+  left: -245px;
   visibility: visible;
 }
 
