@@ -16,18 +16,17 @@
         .wrap_menu {
             position: relative;
             @include size(55px, 55px);
+            z-index: 1;
             .head_menu {
-                @include size(300px, auto);
+                @include size(55px, 55px);
                 position: absolute;
                 border-radius: 15px;
                 padding-top: 64px;
-                @include trbl(-199px, 246px, 0, 0);
-                border: 1px solid black;
-                visibility: collapse;
+                @include trbl(-999px, 0, 0, -300px);
                 transition: all 1s;
-                z-index: 0;
+                z-index: -1;
                 #menu_1 {
-                    display: block;
+                    display: none;
                     @include size(100%, auto);
                     background-color: rgba(128, 128, 128, 0.329);
                     margin: 0px;
@@ -59,8 +58,11 @@
                             background: #899593;
                         }
                         &:hover ul {
-                            left: 300px;
+                            left: -300px;
                             opacity: 1;
+                            li {
+                                position: static;
+                            }
                         }
                         ul {
                             width: 100%;
@@ -72,6 +74,8 @@
                             border: none;
                             border-right: #2c3632;
                             li {
+                                position: absolute;
+                                @include trbl(0px, 0px, 0, 0);
                                 background: #bdc3c7;
                                 background: -webkit-linear-gradient(to right, #899593, #d3d4d6);
                                 background: linear-gradient(to right, #899593, #d3d4d6);
@@ -133,9 +137,12 @@
                 }
             }
             &:hover>.head_menu {
+                @include size(300px, auto);
                 top: 0px;
-                left: -245px;
-                visibility: visible;
+                left: -300px;
+                #menu_1 {
+                    display: block;
+                }
             }
         }
     }
