@@ -1,0 +1,69 @@
+.service_page {
+    position: relative;
+    @include size(100%, auto);
+    padding: 100px 0;
+    .service_head {
+        @include size(100%, auto);
+        text-align: center;
+        .service_description {
+            @include size(1000px, auto);
+            @extend %flex_collum_fs;
+            overflow: auto;
+            margin: auto;
+            p {
+                text-indent: 30px;
+                text-align: justify;
+                font-size: 24px;
+                font-weight: 500;
+                color: #2c3632;
+                margin: 5px 5px 5px 25px;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+    .service_page_main {
+        @include size(1440px, auto);
+        position: relative;
+        margin: auto;
+        .service_page_elenebt {
+            @extend %flex_collum_fs;
+            border: 1px solid black;
+            .service_page_box {
+                @include size(80%, auto);
+                @extend %flex_row_a;
+                margin: auto;
+                border: 1px solid black;
+                .service_page_fotoblock {
+                    @include size(30%, 400px);
+                    position: relative;
+                    border: 1px solid black;
+                    .foto {
+                        @include size(150px, auto);
+                        position: absolute;
+                        background-size: cover;
+                        overflow: hidden;
+                        img {
+                            @include size(100%, auto);
+                        }
+                    }
+                     :nth-child(1) {
+                        top: 0px;
+                        left: -150px;
+                        transform: rotateZ( 0deg) translate(0px) rotateY( 0deg) rotateX( 0deg);
+                    }
+                     :nth-child(2) {
+                        top: 0px;
+                        left: -150px;
+                    }
+                     :nth-child(3) {
+                        bottom: 0px;
+                        left: -150px;
+                    }
+                }
+                .service_page_textblock {
+                    @include size(70%, auto);
+                }
+            }
+        }
+    }
+}

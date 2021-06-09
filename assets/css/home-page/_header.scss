@@ -23,15 +23,16 @@
                 border-radius: 15px;
                 padding-top: 64px;
                 @include trbl(-999px, 0, 0, -300px);
-                transition: all 1s;
+                transition: all 0.8s;
                 z-index: -1;
                 #menu_1 {
-                    display: none;
                     @include size(100%, auto);
                     background-color: rgba(128, 128, 128, 0.329);
                     margin: 0px;
                     padding: 0px;
                     list-style: none;
+                    transition: all 0.5s;
+                    visibility: collapse;
                     position: relative;
                     z-index: -1;
                     li {
@@ -106,7 +107,7 @@
                 transform-style: preserve-3d;
                 border-radius: 15px;
                 transition-property: all;
-                transition-duration: 1s;
+                transition-duration: 0.5s;
                 transition-timing-function: cubic-bezier(0, 0.3, 1, 0.31);
                 transition-delay: 0s;
                 transform: rotateZ( 0deg) translate(0px) rotateY( 0deg) rotateX( 0deg);
@@ -141,7 +142,7 @@
                 top: 0px;
                 left: -300px;
                 #menu_1 {
-                    display: block;
+                    visibility: inherit;
                 }
             }
         }

@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.services .service_elenebt, .foto_galery .gallery_elenebt, footer .footer_block {
+.services .service_elenebt, .foto_galery .gallery_elenebt, footer .footer_block, .service_page .service_page_main .service_page_elenebt .service_page_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +408,7 @@ template {
           align-items: center;
 }
 
-.about_us .about_us_block .about_us_text_foto .about_us_text {
+.about_us .about_us_block .about_us_text_foto .about_us_text, .service_page .service_head .service_description, .service_page .service_page_main .service_page_elenebt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,19 +464,21 @@ template {
   right: 0;
   bottom: 0;
   left: -300px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
   z-index: -1;
 }
 
 .header .wraper .wrap_menu .head_menu #menu_1 {
-  display: none;
   width: 100%;
   height: auto;
   background-color: rgba(128, 128, 128, 0.329);
   margin: 0px;
   padding: 0px;
   list-style: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  visibility: collapse;
   position: relative;
   z-index: -1;
 }
@@ -575,8 +577,8 @@ template {
   border-radius: 15px;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0, 0.3, 1, 0.31);
           transition-timing-function: cubic-bezier(0, 0.3, 1, 0.31);
   -webkit-transition-delay: 0s;
@@ -631,7 +633,7 @@ template {
 }
 
 .header .wraper .wrap_menu:hover > .head_menu #menu_1 {
-  display: block;
+  visibility: inherit;
 }
 
 .header_color {
@@ -1056,8 +1058,8 @@ footer .footer_block .contact ul .contact_list li {
   font-size: 16px;
 }
 
-footer .footer_block .contact .google_map {
-  border: 1px solid black;
+footer .footer_block .google_map {
+  border: 4px double black;
 }
 
 .gallery-page {
@@ -1092,6 +1094,96 @@ footer .footer_block .contact .google_map {
 
 .gallery-page .foto_block .gallery {
   margin-top: 180px;
+}
+
+.service_page {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+
+.service_page .service_head {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.service_page .service_head .service_description {
+  width: 1000px;
+  height: auto;
+  overflow: auto;
+  margin: auto;
+}
+
+.service_page .service_head .service_description p {
+  text-indent: 30px;
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2c3632;
+  margin: 5px 5px 5px 25px;
+  letter-spacing: 0.8px;
+}
+
+.service_page .service_page_main {
+  width: 1440px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.service_page .service_page_main .service_page_elenebt {
+  border: 1px solid black;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock {
+  width: 30%;
+  height: 400px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock .foto {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock .foto img {
+  width: 100%;
+  height: auto;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock :nth-child(1) {
+  top: 0px;
+  left: -150px;
+  -webkit-transform: rotateZ(0deg) translate(0px) rotateY(0deg) rotateX(0deg);
+          transform: rotateZ(0deg) translate(0px) rotateY(0deg) rotateX(0deg);
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock :nth-child(2) {
+  top: 0px;
+  left: -150px;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock :nth-child(3) {
+  bottom: 0px;
+  left: -150px;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock {
+  width: 70%;
+  height: auto;
 }
 
 /*-------------------------------------------------*/
