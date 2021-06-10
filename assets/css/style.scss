@@ -38,7 +38,8 @@ font-family: 'Roboto Slab', serif;
     font-weight: 400;
 }
 
-.block_title {
+.block_title,
+.service_page_block_title {
     font-size: 60px;
     font-family: 'IBM Plex Serif', serif;
     font-weight: 600;
@@ -52,6 +53,12 @@ font-family: 'Roboto Slab', serif;
 
 .aus_title {
     top: 50px;
+    visibility: visible;
+    z-index: 1;
+}
+
+.spb_title {
+    left: -300px;
     visibility: visible;
     z-index: 1;
 }

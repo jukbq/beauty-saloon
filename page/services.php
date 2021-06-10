@@ -5,15 +5,12 @@
 ?>
 <?php get_header(); ?>
 
-
-
-
 <section class="service_page">
-    <div class="service_head">
-        <h1 class="big_tite">
+    <div class="service_head" style="background-image: url(<?php echo get_field('service_page_head_img'); ?>);">
+       
+        <h1 class="big_titel">
             <?php the_field( 'service_titel' ); ?>
         </h1>
-
         <div class="service_description">
             <?php the_field( 'service_description' ); ?>
         </div>
@@ -30,23 +27,15 @@
                         ?>
                 <li class="service_page_box">
                     <div class="service_page_fotoblock">
-                        <div class="foto">
-                            <img src="<?php the_field('foto_1');?>">
-                        </div>
-                        <div class="foto">
-                            <img src="<?php the_field('foto_2');?>">
-                        </div>
-                        <div class="foto">
-                            <img src="<?php the_field('foto_3');?>">
-                        </div>
+                        <img src="<?php the_field('foto_1');?>">
                     </div>
                     <div class="service_page_textblock">
-                        <div class="block_title">
+                        <div class="service_page_block_title">
                             <?php the_field( 'service_page_block_title' ); ?>
                         </div>
-                        <p>
+                        <div class="service_page_block_text">
                             <?php the_field( 'service_page_block_description' ); ?>
-                        </p>
+                        </div>
                     </div>
                 </li>
                 <?php endforeach; ?>

@@ -31,7 +31,14 @@ $(document).ready(function() {
                 $(this).removeClass('aus_title')
             }
         });
-        $('.about_us_text_foto').each(function() {
+        $('.service_page_block_title').each(function() {
+            if (is_shown($(this)) == true) {
+                $(this).addClass('spb_title')
+            }
+        });
+
+
+        $('.about_us_text_foto, .service_page_box').each(function() {
             if (is_shown($(this)) == true) {
                 $(this).addClass('aus_text_foto')
             }

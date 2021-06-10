@@ -392,7 +392,7 @@ template {
           align-items: center;
 }
 
-.services, .foto_galery {
+.services, .foto_galery, .service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +408,7 @@ template {
           align-items: center;
 }
 
-.about_us .about_us_block .about_us_text_foto .about_us_text, .service_page .service_head .service_description, .service_page .service_page_main .service_page_elenebt {
+.about_us .about_us_block .about_us_text_foto .about_us_text, .service_page .service_head .service_description, .service_page .service_page_main .service_page_elenebt, .service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock .service_page_block_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,23 +1097,34 @@ footer .footer_block .google_map {
 }
 
 .service_page {
-  position: relative;
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  margin-bottom: 150px;
+  background: #899593;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0f1f4), color-stop(#d3d4d6), to(#899593));
+  background: linear-gradient(to top, #f0f1f4, #d3d4d6, #899593);
 }
 
 .service_page .service_head {
   width: 100%;
-  height: auto;
+  height: 700px;
+  margin-bottom: 200px;
+  padding: 60px 0;
   text-align: center;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .service_page .service_head .service_description {
-  width: 1000px;
+  width: 70%;
   height: auto;
+  background-color: #d3d4d63b;
+  padding: 10px;
+  border-radius: 10px;
   overflow: auto;
   margin: auto;
+  margin-top: 50px;
 }
 
 .service_page .service_head .service_description p {
@@ -1133,57 +1144,63 @@ footer .footer_block .google_map {
   margin: auto;
 }
 
-.service_page .service_page_main .service_page_elenebt {
-  border: 1px solid black;
-}
-
 .service_page .service_page_main .service_page_elenebt .service_page_box {
   width: 80%;
-  height: auto;
+  height: 400px;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+  border-radius: 25% 0 10% 0;
+  background: #abbaab;
+  background: linear-gradient(-45deg, #c4c5c7, #f0f1f400);
   margin: auto;
-  border: 1px solid black;
+  z-index: 3;
 }
 
 .service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock {
-  width: 30%;
+  width: 35%;
   height: 400px;
   position: relative;
-  border: 1px solid black;
-}
-
-.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock .foto {
-  width: 150px;
-  height: auto;
-  position: absolute;
   background-size: cover;
   overflow: hidden;
+  border-radius: 25% 0 0 0;
+  z-index: -1;
 }
 
-.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock .foto img {
-  width: 100%;
-  height: auto;
-}
-
-.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock :nth-child(1) {
-  top: 0px;
-  left: -150px;
-  -webkit-transform: rotateZ(0deg) translate(0px) rotateY(0deg) rotateX(0deg);
-          transform: rotateZ(0deg) translate(0px) rotateY(0deg) rotateX(0deg);
-}
-
-.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock :nth-child(2) {
-  top: 0px;
-  left: -150px;
-}
-
-.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock :nth-child(3) {
-  bottom: 0px;
-  left: -150px;
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_fotoblock img {
+  width: auto;
+  height: 100%;
 }
 
 .service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock {
   width: 70%;
   height: auto;
+  padding: 0px 15px;
+  position: relative;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock .service_page_block_title {
+  top: -63px;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock .service_page_block_text {
+  width: auto;
+  height: 320px;
+  overflow: auto;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock .service_page_block_text p {
+  text-indent: 30px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3632;
+  letter-spacing: 0.8px;
+}
+
+.service_page .service_page_main .service_page_elenebt .aus_text_foto {
+  opacity: 1;
 }
 
 /*-------------------------------------------------*/
@@ -1210,7 +1227,8 @@ font-family: 'Roboto Slab', serif;
   font-weight: 400;
 }
 
-.block_title {
+.block_title,
+.service_page_block_title {
   font-size: 60px;
   font-family: 'IBM Plex Serif', serif;
   font-weight: 600;
@@ -1228,6 +1246,12 @@ font-family: 'Roboto Slab', serif;
 
 .aus_title {
   top: 50px;
+  visibility: visible;
+  z-index: 1;
+}
+
+.spb_title {
+  left: -300px;
   visibility: visible;
   z-index: 1;
 }

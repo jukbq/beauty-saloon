@@ -1,15 +1,26 @@
 .service_page {
-    position: relative;
     @include size(100%, auto);
-    padding: 100px 0;
+    margin-bottom: 150px;
+    background: #899593;
+    background: -webkit-linear-gradient(to top, #f0f1f4, #d3d4d6, #899593);
+    background: linear-gradient(to top, #f0f1f4, #d3d4d6, #899593);
     .service_head {
-        @include size(100%, auto);
+        @include size(100%, 700px);
+        margin-bottom: 200px;
+        padding: 60px 0;
         text-align: center;
+        position: relative;
+        background-size: cover;
+        overflow: hidden;
         .service_description {
-            @include size(1000px, auto);
+            @include size(70%, auto);
             @extend %flex_collum_fs;
+            background-color: #d3d4d63b;
+            padding: 10px;
+            border-radius: 10px;
             overflow: auto;
             margin: auto;
+            margin-top: 50px;
             p {
                 text-indent: 30px;
                 text-align: justify;
@@ -27,42 +38,54 @@
         margin: auto;
         .service_page_elenebt {
             @extend %flex_collum_fs;
-            border: 1px solid black;
             .service_page_box {
-                @include size(80%, auto);
+                @include size(80%, 400px);
                 @extend %flex_row_a;
+                position: relative;
+                transition: all 1s;
+                opacity: 0;
+                border-radius: 25% 0 10% 0;
+                background: #abbaab;
+                background: -webkit-linear-gradient(-45deg, #c4c5c7, #f0f1f400);
+                background: linear-gradient(-45deg, #c4c5c7, #f0f1f400);
                 margin: auto;
-                border: 1px solid black;
+                z-index: 3;
                 .service_page_fotoblock {
-                    @include size(30%, 400px);
+                    @include size(35%, 400px);
                     position: relative;
-                    border: 1px solid black;
-                    .foto {
-                        @include size(150px, auto);
-                        position: absolute;
-                        background-size: cover;
-                        overflow: hidden;
-                        img {
-                            @include size(100%, auto);
-                        }
-                    }
-                     :nth-child(1) {
-                        top: 0px;
-                        left: -150px;
-                        transform: rotateZ( 0deg) translate(0px) rotateY( 0deg) rotateX( 0deg);
-                    }
-                     :nth-child(2) {
-                        top: 0px;
-                        left: -150px;
-                    }
-                     :nth-child(3) {
-                        bottom: 0px;
-                        left: -150px;
+                    background-size: cover;
+                    overflow: hidden;
+                    border-radius: 25% 0 0 0;
+                    z-index: -1;
+                    img {
+                        @include size(auto, 100%);
                     }
                 }
                 .service_page_textblock {
                     @include size(70%, auto);
+                    @extend %flex_collum_csb;
+                    padding: 0px 15px;
+                    position: relative;
+                    .service_page_block_title {
+                        top: -63px;
+                    }
+                    .service_page_block_text {
+                        @extend %flex_collum_fs;
+                        @include size(auto, 320px);
+                        overflow: auto;
+                        p {
+                            text-indent: 30px;
+                            text-align: justify;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #2c3632;
+                            letter-spacing: 0.8px;
+                        }
+                    }
                 }
+            }
+            .aus_text_foto {
+                opacity: 1;
             }
         }
     }
