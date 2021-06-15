@@ -7,7 +7,7 @@
 
 <section class="service_page">
     <div class="service_head" style="background-image: url(<?php echo get_field('service_page_head_img'); ?>);">
-       
+
         <h1 class="big_titel">
             <?php the_field( 'service_titel' ); ?>
         </h1>
@@ -35,8 +35,11 @@
                         </div>
                         <div class="service_page_block_text">
                             <?php the_field( 'service_page_block_description' ); ?>
-                        </div>
+                        </div> 
+                        <a class="more_button" href="">Більше</a>
                     </div>
+
+
                 </li>
                 <?php endforeach; ?>
             </ul>

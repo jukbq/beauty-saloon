@@ -23,6 +23,11 @@ function bs_template ( $template ) {
 			$template = $new_template ;
 	;}	
 
+	if( is_page('services_more')  ){
+		if ( $new_template = locate_template( array( '/page/services_more.phpp' ) ) )
+			$template = $new_template ;
+	;}	
+
 
 	if( is_page('gallery-page')  ){
 		if ( $new_template = locate_template( array( '/page/gallery-page.php' ) ) )

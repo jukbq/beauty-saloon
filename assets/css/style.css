@@ -571,7 +571,7 @@ template {
 .header .wraper .wrap_menu .menu_icon {
   width: 55px;
   height: 55px;
-  border: 3px solid #899593;
+  border: 3px solid #6f6f6f;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   border-radius: 15px;
@@ -590,7 +590,7 @@ template {
 .header .wraper .wrap_menu .menu_icon .burger-line {
   width: 40px;
   height: 3px;
-  background-color: #899593;
+  background-color: #6f6f6f;
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
   opacity: 1;
@@ -1197,6 +1197,13 @@ footer .footer_block .google_map {
   font-weight: 500;
   color: #2c3632;
   letter-spacing: 0.8px;
+}
+
+.service_page .service_page_main .service_page_elenebt .service_page_box .service_page_textblock .more_button {
+  padding: 10px 50px;
+  border: 1px solid #030303;
+  border-radius: 30px;
+  background-color: #899593;
 }
 
 .service_page .service_page_main .service_page_elenebt .aus_text_foto {
