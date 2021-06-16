@@ -834,6 +834,18 @@ template {
   opacity: 1;
 }
 
+@media (max-width: 1320px) {
+  .about_us {
+    position: relative;
+    width: 100%;
+    height: 700px;
+  }
+  .about_us .about_us_block {
+    width: 1200px;
+    height: 100%;
+  }
+}
+
 .services {
   position: relative;
   width: 100%;

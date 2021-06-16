@@ -45,3 +45,13 @@
         }
     }
 }
+
+@media (max-width: 1320px) {
+    .about_us {
+        position: relative;
+        @include size(100%, 700px);
+        .about_us_block {
+            @include size(1200px, 100%);
+        }
+    }
+}
