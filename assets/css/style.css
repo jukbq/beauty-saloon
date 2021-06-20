@@ -487,6 +487,8 @@ template {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: relative;
   text-align: center;
   border-top: 1px solid #2c3632;
@@ -530,10 +532,6 @@ template {
   right: 0px;
   bottom: 0;
   left: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   opacity: 0;
   border: none;
   border-right: #2c3632;
@@ -646,6 +644,112 @@ template {
 
 .wrapper_head_menu :nth-child(1) {
   background-color: #d3d4d6;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 100%;
+    height: 70px;
+  }
+  .header .wraper .custom-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .header .wraper .wrap_menu {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+  }
+  .header .wraper .wrap_menu .head_menu {
+    width: 50px;
+    height: 50px;
+    padding-top: 54px;
+  }
+  .header .wraper .wrap_menu .menu_icon {
+    width: 50px;
+    height: 50px;
+  }
+  .header .wraper .wrap_menu .menu_icon .burger-line {
+    width: 35px;
+    height: 2.5px;
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    width: 100%;
+    height: 60px;
+  }
+  .header .wraper .custom-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .header .wraper .wrap_menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+  .header .wraper .wrap_menu .head_menu {
+    width: 40px;
+    height: 40px;
+    padding-top: 44px;
+  }
+  .header .wraper .wrap_menu .head_menu #menu_1 li a {
+    font-size: 14px;
+  }
+  .header .wraper .wrap_menu .head_menu #menu_1 li ul {
+    position: static;
+  }
+  .header .wraper .wrap_menu .menu_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .header .wraper .wrap_menu .menu_icon .burger-line {
+    width: 30px;
+    height: 2px;
+  }
+  .header .wraper .wrap_menu:hover > .menu_icon :nth-child(1) {
+    margin-top: 17px;
+  }
+  .header .wraper .wrap_menu:hover > .menu_icon :nth-child(3) {
+    margin-bottom: 15px;
+  }
+  .header .wraper .wrap_menu:hover > .head_menu {
+    left: -260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+    height: 50px;
+  }
+  .header .wraper .custom-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .header .wraper .wrape .wrap_menu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+  }
+  .header .wraper .wrape .wrap_menu .head_menu {
+    width: 30px;
+    height: 30px;
+    padding-top: 34px;
+  }
+  .header .wraper .wrape .wrap_menu .menu_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .header .wraper .wrape .wrap_menu .menu_icon .burger-line {
+    width: 25px;
+    height: 1.5px;
+  }
 }
 
 .slider {
