@@ -35,9 +35,16 @@
                     letter-spacing: 0.8px;
                 }
             }
-            img {
+            .about_foto {
                 @include size(auto, 100%);
+                box-shadow: inset 33px 0px 20px 7px #d5d7d9d4;
                 border-radius: 0 0 10% 0;
+                img {
+                    @include size(auto, 100%);
+                    border-radius: 0 0 10% 0;
+                    position: relative;
+                    z-index: -2;
+                }
             }
         }
         .aus_text_foto {
@@ -46,12 +53,137 @@
     }
 }
 
-@media (max-width: 1320px) {
+
+/*-----------------------adaptive--------*/
+
+@media (max-width: 1200px) {
     .about_us {
-        position: relative;
+        @include size(100%, 800px);
+        .about_us_block {
+            @include size(992px, 100%);
+            h3 {
+                font-size: 56px;
+            }
+            .about_us_text_foto {
+                .about_us_text {
+                    padding: 20px 0 20px 20px;
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .about_us {
         @include size(100%, 700px);
         .about_us_block {
-            @include size(1200px, 100%);
+            @include size(768px, 100%);
+            h3 {
+                font-size: 52px;
+            }
+            .about_us_text_foto {
+                .about_us_text {
+                    padding: 20px 0 20px 20px;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .about_us {
+        @include size(100%, 600px);
+        .about_us_block {
+            @include size(576px, 100%);
+            h3 {
+                font-size: 42px;
+            }
+            .about_us_text_foto {
+                .about_us_text {
+                    padding: 20px 0 20px 20px;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .about_us {
+        @include size(100%, auto);
+        .about_us_block {
+            @include size(540px, auto);
+            h3 {
+                font-size: 38px;
+            }
+            .about_us_text_foto {
+                flex-direction: column;
+                @include size(480px, auto);
+                margin-top: 100px;
+                .about_us_text {
+                    @include size(100%, 400px);
+                    overflow: auto;
+                    padding: 30px 25px 30px 25px;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .about_foto {
+                    width: 100%;
+                    box-shadow: none;
+                    position: absolute;
+                    overflow: hidden;
+                    border-radius: 25% 0 10% 0;
+                    img {
+                        @include size(540px, auto);
+                        filter: blur(4px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .about_us {
+        @include size(100%, auto);
+        .about_us_block {
+            @include size(320px, auto);
+            h3 {
+                font-size: 34px;
+            }
+            .about_us_text_foto {
+                flex-direction: column;
+                @include size(300px, auto);
+                margin-top: 100px;
+                .about_us_text {
+                    @include size(100%, 450px);
+                    overflow: auto;
+                    padding: 30px 25px 30px 25px;
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .about_foto {
+                    width: 100%;
+                    box-shadow: none;
+                    position: absolute;
+                    overflow: hidden;
+                    border-radius: 25% 0 10% 0;
+                    img {
+                        @include size(320px, auto);
+                        filter: blur(4px);
+                    }
+                }
+            }
         }
     }
 }

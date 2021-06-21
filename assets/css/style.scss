@@ -83,7 +83,7 @@ a {
 /*-----------------------------------------------------*/
 
 .body_img_left {
-    @include size(356px, 320px);
+    height: 320px;
     position: absolute;
     z-index: -1;
     &.top {
@@ -126,5 +126,38 @@ a {
     position: relative;
     .lswss-wrap {
         padding: 120px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .body_img_left {
+        height: 226px;
+    }
+    .body_img_right {
+        @include size(300px, 280px);
+    }
+}
+
+@media (max-width: 992px) {
+    .body_img_left {
+        height: 190px;
+    }
+    .body_img_right {
+        @include size(300px, 280px);
+    }
+}
+
+@media (max-width: 768px) {
+    .body_img_left {
+        height: 161px;
+    }
+    .body_img_right {
+        @include size(150px, 140px);
+    }
+}
+
+@media (max-width: 576px) {
+    .body_img_left {
+        height: 138px;
     }
 }
