@@ -94,7 +94,7 @@
                             }
                         }
                     }
-                     :nth-child(1) {
+                   :nth-child(1) {
                         border: none
                     }
                 }
@@ -158,6 +158,8 @@
         background-color: #d3d4d6;
     }
 }
+
+/*------------------------adaptive------------------------*/
 
 @media (max-width: 1200px) {
     .header {
