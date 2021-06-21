@@ -238,19 +238,31 @@
             .custom-logo {
                 @include size(40px, 40px);
             }
-            .wrape .wrap_menu {
+            .wrap_menu {
                 position: relative;
                 @include size(30px, 30px);
                 z-index: 1;
                 .head_menu {
                     @include size(30px, 30px);
-                    padding-top: 34px;
+                    padding-top: 35px;
                 }
                 .menu_icon {
                     @include size(30px, 30px);
                     .burger-line {
                         @include size(25px, 1.5px);
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        .wraper {
+            .wrap_menu {
+                &:hover>.head_menu {
+                    left: -220px;
                 }
             }
         }
