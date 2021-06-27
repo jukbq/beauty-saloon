@@ -135,7 +135,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <div class="body_img_right top">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/bottom-right.png" alt="">
         </div>
-        <?php echo do_shortcode('[slick_logo_carousel id="480"]'); ?>->
+        <?php echo do_shortcode('[slick_logo_carousel id="480"]'); ?>
     </section>
 
 

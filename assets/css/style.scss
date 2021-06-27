@@ -129,7 +129,7 @@ a {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
     .body_img_left {
         height: 226px;
     }
@@ -154,10 +154,22 @@ a {
     .body_img_right {
         @include size(150px, 140px);
     }
+    .brends {
+        height: 280px;
+    }
 }
 
 @media (max-width: 576px) {
     .body_img_left {
         height: 138px;
+    }
+    .brends {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brends {
+        height: 220px;
     }
 }

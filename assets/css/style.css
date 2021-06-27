@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.services .service_elenebt, .foto_galery .gallery_elenebt, footer .footer_block, .service_page .service_page_main .service_page_elenebt .service_page_box {
+footer .footer_block, .service_page .service_page_main .service_page_elenebt .service_page_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +352,7 @@ template {
           align-items: center;
 }
 
-.header .wraper, .about_us .about_us_block .about_us_text_foto {
+.header .wraper, .about_us .about_us_block .about_us_text_foto, .services .service_elenebt, .foto_galery .gallery_elenebt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,7 +434,7 @@ template {
 }
 
 .header .wraper {
-  width: 80%;
+  width: 1440px;
   padding: 5px 5%;
   margin: auto;
 }
@@ -956,7 +956,7 @@ template {
 }
 
 /*-----------------------adaptive--------*/
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
   .about_us {
     width: 100%;
     height: 800px;
@@ -966,13 +966,21 @@ template {
     height: 100%;
   }
   .about_us .about_us_block h3 {
-    font-size: 56px;
+    font-size: 64px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
     padding: 20px 0 20px 20px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text p {
     font-size: 20px;
+  }
+  .about_us .about_us_block .about_us_text_foto .about_foto {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .about_us .about_us_block .about_us_text_foto .about_foto img {
+    height: 100%;
   }
 }
 
@@ -984,9 +992,6 @@ template {
   .about_us .about_us_block {
     width: 768px;
     height: 100%;
-  }
-  .about_us .about_us_block h3 {
-    font-size: 52px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
     padding: 20px 0 20px 20px;
@@ -1002,11 +1007,11 @@ template {
     height: 600px;
   }
   .about_us .about_us_block {
-    width: 576px;
+    width: 640px;
     height: 100%;
   }
-  .about_us .about_us_block h3 {
-    font-size: 42px;
+  .about_us .about_us_block .about_us_text_foto {
+    width: 600px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
     padding: 20px 0 20px 20px;
@@ -1025,9 +1030,6 @@ template {
     width: 540px;
     height: auto;
   }
-  .about_us .about_us_block h3 {
-    font-size: 38px;
-  }
   .about_us .about_us_block .about_us_text_foto {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1041,10 +1043,7 @@ template {
     width: 100%;
     height: 400px;
     overflow: auto;
-    padding: 30px 25px 30px 25px;
-  }
-  .about_us .about_us_block .about_us_text_foto .about_us_text p {
-    font-size: 14px;
+    padding: 25px 15px 30px 15px;
   }
   .about_us .about_us_block .about_us_text_foto .about_foto {
     width: 100%;
@@ -1055,7 +1054,7 @@ template {
     border-radius: 25% 0 10% 0;
   }
   .about_us .about_us_block .about_us_text_foto .about_foto img {
-    width: 540px;
+    width: 100%;
     height: auto;
     -webkit-filter: blur(4px);
             filter: blur(4px);
@@ -1068,18 +1067,15 @@ template {
     height: auto;
   }
   .about_us .about_us_block {
-    width: 320px;
+    width: 400px;
     height: auto;
-  }
-  .about_us .about_us_block h3 {
-    font-size: 34px;
   }
   .about_us .about_us_block .about_us_text_foto {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 300px;
+    width: 400px;
     height: auto;
     margin-top: 100px;
   }
@@ -1091,20 +1087,6 @@ template {
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text p {
     font-size: 12px;
-  }
-  .about_us .about_us_block .about_us_text_foto .about_foto {
-    width: 100%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 25% 0 10% 0;
-  }
-  .about_us .about_us_block .about_us_text_foto .about_foto img {
-    width: 320px;
-    height: auto;
-    -webkit-filter: blur(4px);
-            filter: blur(4px);
   }
 }
 
@@ -1203,6 +1185,77 @@ template {
   line-height: 90px;
 }
 
+/*-----------------------adaptive--------*/
+@media (max-width: 1320px) {
+  .services {
+    width: 100%;
+    height: 800px;
+  }
+  .services h3 {
+    font-size: 64px;
+  }
+  .services .service_elenebt {
+    width: 992px;
+    height: 100%;
+  }
+  .services .service_elenebt .service_box {
+    width: 29%;
+    height: 500px;
+  }
+  .services .service_elenebt .service_box .icon .icon_service {
+    width: 150px;
+    height: 150px;
+  }
+  .services .service_elenebt .service_box .icon .frame_icon {
+    width: 190px;
+    height: 190px;
+  }
+  .services .service_elenebt .service_box .block_title {
+    font-size: 40px;
+    line-height: 71px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services {
+    width: 100%;
+    height: auto;
+  }
+  .services .service_elenebt {
+    width: 768px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .service_elenebt .service_box {
+    position: relative;
+    width: 60%;
+    height: 640px;
+    margin-bottom: 100px;
+  }
+  .services .service_elenebt .service_box .icon .icon_service {
+    width: 200px;
+    height: 200px;
+  }
+  .services .service_elenebt .service_box .icon .frame_icon {
+    width: 240px;
+    height: 240px;
+  }
+  .services .service_elenebt .service_box .block_title {
+    font-size: 52px;
+    line-height: 106px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services .service_elenebt .service_box {
+    width: 50%;
+    height: 640px;
+  }
+}
+
 .foto_galery {
   position: relative;
   width: 100%;
@@ -1299,6 +1352,77 @@ template {
   line-height: 90px;
 }
 
+/*-----------------------adaptive--------*/
+@media (max-width: 1320px) {
+  .foto_galery {
+    width: 100%;
+    height: 800px;
+  }
+  .foto_galery h3 {
+    font-size: 64px;
+  }
+  .foto_galery .gallery_elenebt {
+    width: 992px;
+    height: 100%;
+  }
+  .foto_galery .gallery_elenebt .gallery_box {
+    width: 29%;
+    height: 500px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery {
+    width: 150px;
+    height: 150px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
+    width: 190px;
+    height: 190px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .block_title {
+    font-size: 40px;
+    line-height: 71px;
+  }
+}
+
+@media (max-width: 992px) {
+  .foto_galery {
+    width: 100%;
+    height: auto;
+  }
+  .foto_galery .gallery_elenebt {
+    width: 768px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foto_galery .gallery_elenebt .gallery_box {
+    position: relative;
+    width: 60%;
+    height: 640px;
+    margin-bottom: 100px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery {
+    width: 200px;
+    height: 200px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
+    width: 240px;
+    height: 240px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .block_title {
+    font-size: 52px;
+    line-height: 106px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foto_galery .gallery_elenebt .gallery_box {
+    width: 50%;
+    height: 640px;
+  }
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -1336,6 +1460,45 @@ footer .footer_block .google_map {
   border: 4px double black;
 }
 
+/*-----------------------adaptive--------*/
+@media (max-width: 1320px) {
+  footer .footer_block {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer_block {
+    width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer_block {
+    width: 640px;
+  }
+  footer .footer_block .contact {
+    text-align: center;
+  }
+  footer .footer_block .contact ul .contact_heading {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .footer_block {
+    width: 540px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .footer_block {
+    width: 400px;
+  }
+}
+
 .gallery-page {
   position: relative;
   width: 100%;
@@ -1351,23 +1514,72 @@ footer .footer_block .google_map {
   text-align: center;
 }
 
-.gallery-page .foto_block .big_titel {
-  margin-bottom: 100px;
-}
-
 .gallery-page .foto_block .back_hone {
-  position: absolute;
-  font-size: 40px;
-  left: 0;
+  position: fixed;
+  font-size: 20px;
+  right: 0px;
+  top: 161px;
   padding: 5px 20px;
   color: #2c3632;
   border: 2px double #2c3632;
-  border-radius: 30px;
+  border-radius: 40px;
   background-color: #d3d4d6;
+  z-index: 5;
 }
 
 .gallery-page .foto_block .gallery {
+  margin: auto;
   margin-top: 180px;
+}
+
+/*-----------------------adaptive--------*/
+@media (max-width: 1320px) {
+  .gallery-page .foto_block {
+    width: 992px;
+  }
+  .gallery-page .foto_block .big_titel {
+    font-size: 64px;
+  }
+  .gallery-page .foto_block .gallery {
+    margin-top: 73px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-page .foto_block {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-page .foto_block {
+    width: 648px;
+  }
+  .gallery-page .foto_block .back_hone {
+    top: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-page .foto_block {
+    width: 570px;
+  }
+  .gallery-page .foto_block .back_hone {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-page .foto_block {
+    width: 540px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-page .foto_block {
+    width: 400px;
+  }
 }
 
 .service_page {
@@ -1610,7 +1822,7 @@ a {
   padding: 120px 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
   .body_img_left {
     height: 226px;
   }
@@ -1638,11 +1850,23 @@ a {
     width: 150px;
     height: 140px;
   }
+  .brends {
+    height: 280px;
+  }
 }
 
 @media (max-width: 576px) {
   .body_img_left {
     height: 138px;
+  }
+  .brends {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brends {
+    height: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */

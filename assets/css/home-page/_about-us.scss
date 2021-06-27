@@ -56,19 +56,26 @@
 
 /*-----------------------adaptive--------*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
     .about_us {
         @include size(100%, 800px);
         .about_us_block {
             @include size(992px, 100%);
             h3 {
-                font-size: 56px;
+                font-size: 64px;
             }
             .about_us_text_foto {
                 .about_us_text {
                     padding: 20px 0 20px 20px;
                     p {
                         font-size: 20px;
+                    }
+                }
+                .about_foto {
+                    @include size(30%, 100%);
+                    overflow: hidden;
+                    img {
+                        height: 100%;
                     }
                 }
             }
@@ -81,9 +88,6 @@
         @include size(100%, 700px);
         .about_us_block {
             @include size(768px, 100%);
-            h3 {
-                font-size: 52px;
-            }
             .about_us_text_foto {
                 .about_us_text {
                     padding: 20px 0 20px 20px;
@@ -100,11 +104,9 @@
     .about_us {
         @include size(100%, 600px);
         .about_us_block {
-            @include size(576px, 100%);
-            h3 {
-                font-size: 42px;
-            }
+            @include size(640px, 100%);
             .about_us_text_foto {
+                width: 600px;
                 .about_us_text {
                     padding: 20px 0 20px 20px;
                     p {
@@ -121,9 +123,6 @@
         @include size(100%, auto);
         .about_us_block {
             @include size(540px, auto);
-            h3 {
-                font-size: 38px;
-            }
             .about_us_text_foto {
                 flex-direction: column;
                 @include size(480px, auto);
@@ -131,10 +130,7 @@
                 .about_us_text {
                     @include size(100%, 400px);
                     overflow: auto;
-                    padding: 30px 25px 30px 25px;
-                    p {
-                        font-size: 14px;
-                    }
+                    padding: 25px 15px 30px 15px;
                 }
                 .about_foto {
                     width: 100%;
@@ -143,7 +139,8 @@
                     overflow: hidden;
                     border-radius: 25% 0 10% 0;
                     img {
-                        @include size(540px, auto);
+                        width: 100%;
+                        height: auto;
                         filter: blur(4px);
                     }
                 }
@@ -156,13 +153,10 @@
     .about_us {
         @include size(100%, auto);
         .about_us_block {
-            @include size(320px, auto);
-            h3 {
-                font-size: 34px;
-            }
+            @include size(400px, auto);
             .about_us_text_foto {
                 flex-direction: column;
-                @include size(300px, auto);
+                @include size(400px, auto);
                 margin-top: 100px;
                 .about_us_text {
                     @include size(100%, 450px);
@@ -170,17 +164,6 @@
                     padding: 30px 25px 30px 25px;
                     p {
                         font-size: 12px;
-                    }
-                }
-                .about_foto {
-                    width: 100%;
-                    box-shadow: none;
-                    position: absolute;
-                    overflow: hidden;
-                    border-radius: 25% 0 10% 0;
-                    img {
-                        @include size(320px, auto);
-                        filter: blur(4px);
                     }
                 }
             }

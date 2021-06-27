@@ -7,21 +7,85 @@
         position: relative;
         margin: auto;
         text-align: center;
-        .big_titel {
-            margin-bottom: 100px;
-        }
         .back_hone {
-            position: absolute;
-            font-size: 40px;
-            left: 0;
+            position: fixed;
+            font-size: 20px;
+            right: 0px;
+            top: 161px;
             padding: 5px 20px;
             color: #2c3632;
             border: 2px double #2c3632;
-            border-radius: 30px;
+            border-radius: 40px;
             background-color: #d3d4d6;
+            z-index: 5;
         }
         .gallery {
+            margin: auto;
             margin-top: 180px;
+        }
+    }
+}
+
+
+/*-----------------------adaptive--------*/
+
+@media (max-width: 1320px) {
+    .gallery-page {
+        .foto_block {
+            width: 992px;
+            .big_titel {
+                font-size: 64px;
+            }
+            .gallery {
+                margin-top: 73px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-page {
+        .foto_block {
+            width: 768px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-page {
+        .foto_block {
+            width: 648px;
+            .back_hone {
+                top: 120px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .gallery-page {
+        .foto_block {
+            width: 570px;
+            .back_hone {
+                font-size: 14px;
+                padding: 3px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-page {
+        .foto_block {
+            width: 540px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-page {
+        .foto_block {
+            width: 400px;
         }
     }
 }

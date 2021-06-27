@@ -27,3 +27,53 @@ footer {
         }
     }
 }
+
+
+/*-----------------------adaptive--------*/
+
+@media (max-width: 1320px) {
+    footer {
+        .footer_block {
+            width: 1280px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        .footer_block {
+            width: 768px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .footer_block {
+            width: 640px;
+            .contact {
+                text-align: center;
+                ul .contact_heading {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        .footer_block {
+            width: 540px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        .footer_block {
+            width: 400px;
+        }
+    }
+}

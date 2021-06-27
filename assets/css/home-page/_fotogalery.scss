@@ -3,7 +3,7 @@
     position: relative;
     @include size(100%, auto);
     .gallery_elenebt {
-        @extend %flex_row_a;
+        @extend %flex_row_b;
         @include size(1440px, auto);
         padding: 110px 0;
         position: relative;
@@ -65,6 +65,73 @@
             font-size: 53px;
             text-align: center;
             line-height: 90px;
+        }
+    }
+}
+
+
+/*-----------------------adaptive--------*/
+
+@media (max-width: 1320px) {
+    .foto_galery {
+        @include size(100%, 800px);
+        h3 {
+            font-size: 64px;
+        }
+        .gallery_elenebt {
+            @include size(992px, 100%);
+            .gallery_box {
+                @include size(29%, 500px);
+                .icon {
+                    .icon_gallery {
+                        @include size(150px, 150px);
+                    }
+                    .frame_icon {
+                        @include size(190px, 190px);
+                    }
+                }
+                .block_title {
+                    font-size: 40px;
+                    line-height: 71px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .foto_galery {
+        @include size(100%, auto);
+        .gallery_elenebt {
+            @include size(768px, auto);
+            flex-direction: column;
+            .gallery_box {
+                position: relative;
+                @include size(60%, 640px);
+                margin-bottom: 100px;
+                .icon {
+                    .icon_gallery {
+                        @include size(200px, 200px);
+                    }
+                    .frame_icon {
+                        @include size(240px, 240px);
+                    }
+                }
+                .block_title {
+                    font-size: 52px;
+                    line-height: 106px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .foto_galery {
+        .gallery_elenebt {
+            .gallery_box {
+                @include size(50%, 640px);
+            }
         }
     }
 }
