@@ -3,7 +3,7 @@
     @include size(100%, auto);
     padding: 100px 0;
     .foto_block {
-        @include size(1440px, auto);
+        @include size(80%, auto);
         position: relative;
         margin: auto;
         text-align: center;
@@ -29,10 +29,10 @@
 
 /*-----------------------adaptive--------*/
 
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
     .gallery-page {
         .foto_block {
-            width: 992px;
+            width: 960px;
             .big_titel {
                 font-size: 64px;
             }
@@ -46,7 +46,7 @@
 @media (max-width: 992px) {
     .gallery-page {
         .foto_block {
-            width: 768px;
+            width: 792px;
         }
     }
 }
@@ -54,9 +54,9 @@
 @media (max-width: 768px) {
     .gallery-page {
         .foto_block {
-            width: 648px;
+            width: 614px;
             .back_hone {
-                top: 120px;
+                top: 80px;
             }
         }
     }
@@ -65,8 +65,9 @@
 @media (max-width: 640px) {
     .gallery-page {
         .foto_block {
-            width: 570px;
+            width: 512px;
             .back_hone {
+                top: 60px;
                 font-size: 14px;
                 padding: 3px 10px;
             }
@@ -77,7 +78,7 @@
 @media (max-width: 576px) {
     .gallery-page {
         .foto_block {
-            width: 540px;
+            width: 460px;
         }
     }
 }
@@ -85,7 +86,15 @@
 @media (max-width: 480px) {
     .gallery-page {
         .foto_block {
-            width: 400px;
+            width: 384px;
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .gallery-page {
+        .foto_block {
+            width: 300px;
         }
     }
 }

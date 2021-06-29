@@ -7,7 +7,7 @@
 
 <section class="service_page">
     <div class="service_head" style="background-image: url(<?php echo get_field('service_page_head_img'); ?>);">
-
+<div class="img-overlay"></div>
         <h1 class="big_titel">
             <?php the_field( 'service_titel' ); ?>
         </h1>

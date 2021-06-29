@@ -3,7 +3,7 @@
     @include size(100%, 900px);
     .about_us_block {
         @extend %flex_collum_c;
-        @include size(1440px, 100%);
+        @include size(80%, 100%);
         position: relative;
         transform-style: preserve-3d;
         margin: auto;
@@ -36,11 +36,12 @@
                 }
             }
             .about_foto {
-                @include size(auto, 100%);
+                width: 100%;
+                text-align: center;
                 box-shadow: inset 33px 0px 20px 7px #d5d7d9d4;
                 border-radius: 0 0 10% 0;
                 img {
-                    @include size(auto, 100%);
+                    @include size(100%, auto);
                     border-radius: 0 0 10% 0;
                     position: relative;
                     z-index: -2;
@@ -56,23 +57,21 @@
 
 /*-----------------------adaptive--------*/
 
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
     .about_us {
-        @include size(100%, 800px);
+        height: 800px;
         .about_us_block {
-            @include size(992px, 100%);
-            h3 {
-                font-size: 64px;
-            }
+            width: 960px;
             .about_us_text_foto {
                 .about_us_text {
+                    width: 672px;
                     padding: 20px 0 20px 20px;
                     p {
                         font-size: 20px;
                     }
                 }
                 .about_foto {
-                    @include size(30%, 100%);
+                    width: 288px;
                     overflow: hidden;
                     img {
                         height: 100%;
@@ -85,15 +84,19 @@
 
 @media (max-width:992px) {
     .about_us {
-        @include size(100%, 700px);
+        height: 700px;
         .about_us_block {
-            @include size(768px, 100%);
+            width: 792px;
             .about_us_text_foto {
                 .about_us_text {
+                    width: 554px;
                     padding: 20px 0 20px 20px;
                     p {
                         font-size: 18px;
                     }
+                }
+                .about_foto {
+                    width: 238px;
                 }
             }
         }
@@ -102,16 +105,19 @@
 
 @media (max-width:768px) {
     .about_us {
-        @include size(100%, 600px);
+        height: 600px;
         .about_us_block {
-            @include size(640px, 100%);
+            width: 615px;
             .about_us_text_foto {
-                width: 600px;
                 .about_us_text {
+                    width: 430px;
                     padding: 20px 0 20px 20px;
                     p {
                         font-size: 14px;
                     }
+                }
+                .about_foto {
+                    width: 185px;
                 }
             }
         }
@@ -120,15 +126,15 @@
 
 @media (max-width:576px) {
     .about_us {
-        @include size(100%, auto);
+        height: auto;
         .about_us_block {
-            @include size(540px, auto);
+            @include size(460px, auto);
             .about_us_text_foto {
                 flex-direction: column;
-                @include size(480px, auto);
+                @include size(460px, auto);
                 margin-top: 100px;
                 .about_us_text {
-                    @include size(100%, 400px);
+                    @include size(100%, 500px);
                     overflow: auto;
                     padding: 25px 15px 30px 15px;
                 }
@@ -151,19 +157,34 @@
 
 @media (max-width: 480px) {
     .about_us {
-        @include size(100%, auto);
         .about_us_block {
-            @include size(400px, auto);
+            width: 384px;
             .about_us_text_foto {
-                flex-direction: column;
-                @include size(400px, auto);
+                width: 100%;
                 margin-top: 100px;
                 .about_us_text {
-                    @include size(100%, 450px);
-                    overflow: auto;
-                    padding: 30px 25px 30px 25px;
+                    height: 450px;
                     p {
                         font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .about_us {
+        .about_us_block {
+            width: 300px;
+            .about_us_text_foto {
+                width: 100%;
+                margin-top: 100px;
+                .about_us_text {
+                    height: 400px;
+                    padding: 5px 5px 5px 5px;
+                    p {
+                        font-size: 10px;
                     }
                 }
             }

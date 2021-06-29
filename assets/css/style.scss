@@ -40,7 +40,7 @@ font-family: 'Roboto Slab', serif;
 
 .block_title,
 .service_page_block_title {
-    font-size: 60px;
+    font-size: 64px;
     font-family: 'IBM Plex Serif', serif;
     font-weight: 600;
     color: #2c3632;
@@ -52,7 +52,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .aus_title {
-    top: 50px;
+    top: 30px;
     visibility: visible;
     z-index: 1;
 }
@@ -160,6 +160,9 @@ a {
 }
 
 @media (max-width: 576px) {
+    .block_title {
+        font-size: 52px;
+    }
     .body_img_left {
         height: 138px;
     }
@@ -169,6 +172,9 @@ a {
 }
 
 @media (max-width: 480px) {
+    .block_title {
+        font-size: 42px;
+    }
     .brends {
         height: 220px;
     }

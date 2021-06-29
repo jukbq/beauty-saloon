@@ -434,7 +434,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .header .wraper {
-  width: 1440px;
+  width: 80%;
   padding: 5px 5%;
   margin: auto;
 }
@@ -627,7 +627,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   width: 300px;
   height: auto;
   top: 0px;
-  left: -300px;
+  left: -240px;
 }
 
 .header .wraper .wrap_menu:hover > .head_menu #menu_1 {
@@ -651,6 +651,9 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   .header {
     width: 100%;
     height: 70px;
+  }
+  .header .wraper {
+    width: 960px;
   }
   .header .wraper .custom-logo {
     width: 60px;
@@ -677,10 +680,19 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
+  .header .wraper {
+    width: 792px;
+  }
+}
+
+@media (max-width: 768px) {
   .header {
     width: 100%;
     height: 60px;
+  }
+  .header .wraper {
+    width: 615px;
   }
   .header .wraper .custom-logo {
     width: 50px;
@@ -728,6 +740,9 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
     width: 100%;
     height: 50px;
   }
+  .header .wraper {
+    width: 460px;
+  }
   .header .wraper .custom-logo {
     width: 40px;
     height: 40px;
@@ -751,29 +766,31 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
     width: 25px;
     height: 1.5px;
   }
+  .header .wraper .wrap_menu:hover > .head_menu {
+    width: 460px;
+    left: -402px;
+  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 480px) {
+  .header .wraper {
+    width: 100%;
+  }
+  .header .wraper .custom-logo {
+    display: none;
+  }
+  .header .wraper .wrap_menu {
+    width: 100%;
+  }
   .header .wraper .wrap_menu:hover > .head_menu {
-    left: -220px;
+    width: 100%;
+    left: 0px;
   }
 }
 
 .slider {
   -webkit-box-shadow: 0px 0px 8px 1px #020202;
           box-shadow: 0px 0px 8px 1px #020202;
-}
-
-.button_slider > div {
-  -webkit-box-shadow: 6px 7px 15px 2px black;
-          box-shadow: 6px 7px 15px 2px black;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.button_slider > div:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 /*------------------contact network------------------*/
@@ -895,7 +912,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .about_us .about_us_block {
-  width: 1440px;
+  width: 80%;
   height: 100%;
   position: relative;
   -webkit-transform-style: preserve-3d;
@@ -936,16 +953,16 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .about_us .about_us_block .about_us_text_foto .about_foto {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  text-align: center;
   -webkit-box-shadow: inset 33px 0px 20px 7px #d5d7d9d4;
           box-shadow: inset 33px 0px 20px 7px #d5d7d9d4;
   border-radius: 0 0 10% 0;
 }
 
 .about_us .about_us_block .about_us_text_foto .about_foto img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 0 0 10% 0;
   position: relative;
   z-index: -2;
@@ -956,27 +973,22 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 /*-----------------------adaptive--------*/
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
   .about_us {
-    width: 100%;
     height: 800px;
   }
   .about_us .about_us_block {
-    width: 992px;
-    height: 100%;
-  }
-  .about_us .about_us_block h3 {
-    font-size: 64px;
+    width: 960px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
+    width: 672px;
     padding: 20px 0 20px 20px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text p {
     font-size: 20px;
   }
   .about_us .about_us_block .about_us_text_foto .about_foto {
-    width: 30%;
-    height: 100%;
+    width: 288px;
     overflow: hidden;
   }
   .about_us .about_us_block .about_us_text_foto .about_foto img {
@@ -986,48 +998,48 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 
 @media (max-width: 992px) {
   .about_us {
-    width: 100%;
     height: 700px;
   }
   .about_us .about_us_block {
-    width: 768px;
-    height: 100%;
+    width: 792px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
+    width: 554px;
     padding: 20px 0 20px 20px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text p {
     font-size: 18px;
   }
+  .about_us .about_us_block .about_us_text_foto .about_foto {
+    width: 238px;
+  }
 }
 
 @media (max-width: 768px) {
   .about_us {
-    width: 100%;
     height: 600px;
   }
   .about_us .about_us_block {
-    width: 640px;
-    height: 100%;
-  }
-  .about_us .about_us_block .about_us_text_foto {
-    width: 600px;
+    width: 615px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
+    width: 430px;
     padding: 20px 0 20px 20px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text p {
     font-size: 14px;
   }
+  .about_us .about_us_block .about_us_text_foto .about_foto {
+    width: 185px;
+  }
 }
 
 @media (max-width: 576px) {
   .about_us {
-    width: 100%;
     height: auto;
   }
   .about_us .about_us_block {
-    width: 540px;
+    width: 460px;
     height: auto;
   }
   .about_us .about_us_block .about_us_text_foto {
@@ -1035,13 +1047,13 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 480px;
+    width: 460px;
     height: auto;
     margin-top: 100px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
     width: 100%;
-    height: 400px;
+    height: 500px;
     overflow: auto;
     padding: 25px 15px 30px 15px;
   }
@@ -1062,31 +1074,35 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 @media (max-width: 480px) {
-  .about_us {
-    width: 100%;
-    height: auto;
-  }
   .about_us .about_us_block {
-    width: 400px;
-    height: auto;
+    width: 384px;
   }
   .about_us .about_us_block .about_us_text_foto {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 400px;
-    height: auto;
+    width: 100%;
     margin-top: 100px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text {
-    width: 100%;
     height: 450px;
-    overflow: auto;
-    padding: 30px 25px 30px 25px;
   }
   .about_us .about_us_block .about_us_text_foto .about_us_text p {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 384px) {
+  .about_us .about_us_block {
+    width: 300px;
+  }
+  .about_us .about_us_block .about_us_text_foto {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .about_us .about_us_block .about_us_text_foto .about_us_text {
+    height: 400px;
+    padding: 5px 5px 5px 5px;
+  }
+  .about_us .about_us_block .about_us_text_foto .about_us_text p {
+    font-size: 10px;
   }
 }
 
@@ -1097,7 +1113,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .services .service_elenebt {
-  width: 1440px;
+  width: 80%;
   height: auto;
   padding: 110px 0;
   position: relative;
@@ -1186,73 +1202,108 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 /*-----------------------adaptive--------*/
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
   .services {
-    width: 100%;
     height: 800px;
   }
-  .services h3 {
-    font-size: 64px;
-  }
   .services .service_elenebt {
-    width: 992px;
-    height: 100%;
+    width: 960px;
   }
   .services .service_elenebt .service_box {
-    width: 29%;
+    width: 268px;
     height: 500px;
   }
-  .services .service_elenebt .service_box .icon .icon_service {
-    width: 150px;
-    height: 150px;
-  }
-  .services .service_elenebt .service_box .icon .frame_icon {
-    width: 190px;
-    height: 190px;
-  }
   .services .service_elenebt .service_box .block_title {
-    font-size: 40px;
-    line-height: 71px;
+    font-size: 36px;
+    line-height: 80px;
   }
 }
 
 @media (max-width: 992px) {
   .services {
-    width: 100%;
     height: auto;
   }
   .services .service_elenebt {
-    width: 768px;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 792px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .services .service_elenebt .service_box {
     position: relative;
-    width: 60%;
-    height: 640px;
-    margin-bottom: 100px;
-  }
-  .services .service_elenebt .service_box .icon .icon_service {
-    width: 200px;
-    height: 200px;
-  }
-  .services .service_elenebt .service_box .icon .frame_icon {
-    width: 240px;
-    height: 240px;
+    width: 356px;
+    height: 580px;
+    margin-bottom: 25px;
   }
   .services .service_elenebt .service_box .block_title {
-    font-size: 52px;
-    line-height: 106px;
+    font-size: 50px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services .service_elenebt {
+    width: 614px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services .service_elenebt {
+    width: 460px;
+  }
+  .services .service_elenebt .service_box {
+    height: 480px;
+  }
+  .services .service_elenebt .service_box .icon .icon_service {
+    width: 160px;
+    height: 160px;
+  }
+  .services .service_elenebt .service_box .icon .frame_icon {
+    width: 190px;
+    height: 190px;
+    border: 15px solid #c6c9c1;
+  }
+  .services .service_elenebt .service_box .block_title {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 480px) {
+  .services .service_elenebt {
+    width: 384px;
+  }
   .services .service_elenebt .service_box {
-    width: 50%;
-    height: 640px;
+    width: 356px;
+    height: 480px;
+  }
+  .services .service_elenebt .service_box .block_title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 384px) {
+  .services .service_elenebt {
+    width: 300px;
+  }
+  .services .service_elenebt .service_box {
+    width: 200px;
+    height: 350px;
+  }
+  .services .service_elenebt .service_box .icon .icon_service {
+    width: 110px;
+    height: 110px;
+  }
+  .services .service_elenebt .service_box .icon .frame_icon {
+    width: 130px;
+    height: 130px;
+    border: 10px solid #c6c9c1;
+  }
+  .services .service_elenebt .service_box .block_title {
+    font-size: 26px;
+    line-height: 40px;
   }
 }
 
@@ -1263,7 +1314,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .foto_galery .gallery_elenebt {
-  width: 1440px;
+  width: 80%;
   height: auto;
   padding: 110px 0;
   position: relative;
@@ -1295,7 +1346,6 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   width: 200px;
   height: 200px;
   overflow: hidden;
-  padding: 15px;
   background-image: radial-gradient(#899593ea, #6f6f6f);
   background-size: cover;
   background-position: center;
@@ -1303,7 +1353,6 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 
 .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery img {
   width: 100%;
-  height: auto;
 }
 
 .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
@@ -1353,73 +1402,108 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 /*-----------------------adaptive--------*/
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
   .foto_galery {
-    width: 100%;
     height: 800px;
   }
-  .foto_galery h3 {
-    font-size: 64px;
-  }
   .foto_galery .gallery_elenebt {
-    width: 992px;
-    height: 100%;
+    width: 960px;
   }
   .foto_galery .gallery_elenebt .gallery_box {
-    width: 29%;
+    width: 268px;
     height: 500px;
   }
-  .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery {
-    width: 150px;
-    height: 150px;
-  }
-  .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
-    width: 190px;
-    height: 190px;
-  }
   .foto_galery .gallery_elenebt .gallery_box .block_title {
-    font-size: 40px;
-    line-height: 71px;
+    font-size: 36px;
+    line-height: 80px;
   }
 }
 
 @media (max-width: 992px) {
   .foto_galery {
-    width: 100%;
     height: auto;
   }
   .foto_galery .gallery_elenebt {
-    width: 768px;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 792px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .foto_galery .gallery_elenebt .gallery_box {
     position: relative;
-    width: 60%;
-    height: 640px;
-    margin-bottom: 100px;
-  }
-  .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery {
-    width: 200px;
-    height: 200px;
-  }
-  .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
-    width: 240px;
-    height: 240px;
+    width: 356px;
+    height: 580px;
+    margin-bottom: 25px;
   }
   .foto_galery .gallery_elenebt .gallery_box .block_title {
-    font-size: 52px;
-    line-height: 106px;
+    font-size: 50px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foto_galery .gallery_elenebt {
+    width: 614px;
+  }
+}
+
+@media (max-width: 576px) {
+  .foto_galery .gallery_elenebt {
+    width: 460px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box {
+    height: 480px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery {
+    width: 160px;
+    height: 160px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
+    width: 190px;
+    height: 190px;
+    border: 15px solid #c6c9c1;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .block_title {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 480px) {
+  .foto_galery .gallery_elenebt {
+    width: 384px;
+  }
   .foto_galery .gallery_elenebt .gallery_box {
-    width: 50%;
-    height: 640px;
+    width: 356px;
+    height: 480px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .block_title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 384px) {
+  .foto_galery .gallery_elenebt {
+    width: 300px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box {
+    width: 200px;
+    height: 350px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .icon_gallery {
+    width: 110px;
+    height: 110px;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .icon .frame_icon {
+    width: 130px;
+    height: 130px;
+    border: 10px solid #c6c9c1;
+  }
+  .foto_galery .gallery_elenebt .gallery_box .block_title {
+    font-size: 26px;
+    line-height: 40px;
   }
 }
 
@@ -1434,8 +1518,12 @@ footer .footer_titel {
   font-size: 32px;
 }
 
+footer .footer_titel i {
+  margin-right: 10px;
+}
+
 footer .footer_block {
-  width: 1440px;
+  width: 80%;
   height: 100%;
   margin: auto;
   -webkit-box-align: start;
@@ -1454,6 +1542,7 @@ footer .footer_block .contact ul .contact_list {
 
 footer .footer_block .contact ul .contact_list li {
   font-size: 16px;
+  margin-bottom: 5px;
 }
 
 footer .footer_block .google_map {
@@ -1461,15 +1550,15 @@ footer .footer_block .google_map {
 }
 
 /*-----------------------adaptive--------*/
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
   footer .footer_block {
-    width: 1280px;
+    width: 960px;
   }
 }
 
 @media (max-width: 992px) {
   footer .footer_block {
-    width: 768px;
+    width: 793px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1477,7 +1566,7 @@ footer .footer_block .google_map {
 
 @media (max-width: 768px) {
   footer .footer_block {
-    width: 640px;
+    width: 615px;
   }
   footer .footer_block .contact {
     text-align: center;
@@ -1488,14 +1577,23 @@ footer .footer_block .google_map {
 }
 
 @media (max-width: 576px) {
+  footer .footer_titel {
+    font-size: 28px;
+  }
   footer .footer_block {
-    width: 540px;
+    width: 460px;
   }
 }
 
 @media (max-width: 480px) {
   footer .footer_block {
-    width: 400px;
+    width: 384px;
+  }
+}
+
+@media (max-width: 384px) {
+  footer .footer_block {
+    width: 307px;
   }
 }
 
@@ -1507,7 +1605,7 @@ footer .footer_block .google_map {
 }
 
 .gallery-page .foto_block {
-  width: 1440px;
+  width: 80%;
   height: auto;
   position: relative;
   margin: auto;
@@ -1533,9 +1631,9 @@ footer .footer_block .google_map {
 }
 
 /*-----------------------adaptive--------*/
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
   .gallery-page .foto_block {
-    width: 992px;
+    width: 960px;
   }
   .gallery-page .foto_block .big_titel {
     font-size: 64px;
@@ -1547,24 +1645,25 @@ footer .footer_block .google_map {
 
 @media (max-width: 992px) {
   .gallery-page .foto_block {
-    width: 768px;
+    width: 792px;
   }
 }
 
 @media (max-width: 768px) {
   .gallery-page .foto_block {
-    width: 648px;
+    width: 614px;
   }
   .gallery-page .foto_block .back_hone {
-    top: 120px;
+    top: 80px;
   }
 }
 
 @media (max-width: 640px) {
   .gallery-page .foto_block {
-    width: 570px;
+    width: 512px;
   }
   .gallery-page .foto_block .back_hone {
+    top: 60px;
     font-size: 14px;
     padding: 3px 10px;
   }
@@ -1572,13 +1671,19 @@ footer .footer_block .google_map {
 
 @media (max-width: 576px) {
   .gallery-page .foto_block {
-    width: 540px;
+    width: 460px;
   }
 }
 
 @media (max-width: 480px) {
   .gallery-page .foto_block {
-    width: 400px;
+    width: 384px;
+  }
+}
+
+@media (max-width: 384px) {
+  .gallery-page .foto_block {
+    width: 300px;
   }
 }
 
@@ -1593,17 +1698,29 @@ footer .footer_block .google_map {
 
 .service_page .service_head {
   width: 100%;
-  height: 700px;
+  height: 800px;
   margin-bottom: 200px;
-  padding: 60px 0;
   text-align: center;
   position: relative;
   background-size: cover;
   overflow: hidden;
+  -webkit-box-shadow: inset 0px 0px 59px 36px #899593;
+          box-shadow: inset 0px 0px 59px 36px #899593;
+}
+
+.service_page .service_head h1 {
+  padding-top: 20px;
+}
+
+.service_page .service_head .img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #89959354;
 }
 
 .service_page .service_head .service_description {
-  width: 70%;
+  width: 80%;
   height: auto;
   background-color: #d3d4d63b;
   padding: 10px;
@@ -1696,6 +1813,13 @@ footer .footer_block .google_map {
   opacity: 1;
 }
 
+/*-----------------------adaptive--------*/
+@media (max-width: 1200px) {
+  .service_page .service_head {
+    height: 700px;
+  }
+}
+
 /*-------------------------------------------------*/
 * {
   margin: 0;
@@ -1722,7 +1846,7 @@ font-family: 'Roboto Slab', serif;
 
 .block_title,
 .service_page_block_title {
-  font-size: 60px;
+  font-size: 64px;
   font-family: 'IBM Plex Serif', serif;
   font-weight: 600;
   color: #2c3632;
@@ -1738,7 +1862,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .aus_title {
-  top: 50px;
+  top: 30px;
   visibility: visible;
   z-index: 1;
 }
@@ -1856,6 +1980,9 @@ a {
 }
 
 @media (max-width: 576px) {
+  .block_title {
+    font-size: 52px;
+  }
   .body_img_left {
     height: 138px;
   }
@@ -1865,6 +1992,9 @@ a {
 }
 
 @media (max-width: 480px) {
+  .block_title {
+    font-size: 42px;
+  }
   .brends {
     height: 220px;
   }
