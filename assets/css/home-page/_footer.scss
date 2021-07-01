@@ -27,6 +27,7 @@
                 }
             }
             .google_map {
+                @include size(400px, 300px);
                 border: 4px double black;
             }
         }
@@ -79,6 +80,9 @@
         footer {
             .footer_block {
                 width: 384px;
+                .google_map {
+                    @include size(350px, 200px);
+                }
             }
         }
     }
@@ -87,6 +91,9 @@
         footer {
             .footer_block {
                 width: 307px;
+                .google_map {
+                    @include size(300px, 150px);
+                }
             }
         }
     }

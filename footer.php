@@ -6,13 +6,13 @@
                     <p class="footer_titel"><i class="fas fa-mobile-alt"></i>Телефонии</p>
                     <ul class="contact_list">
                         <li>
-                            <a href="tel:"><?php echo get_theme_mod('phone_1'); ?></a>
+                            <a href="tel:<?php echo get_theme_mod('phone_1'); ?>"><?php echo get_theme_mod('phone_1'); ?></a>
                         </li>
                         <li>
-                            <a href="tel:"><?php echo get_theme_mod('phone_2'); ?></a>
+                            <a href="tel:<?php echo get_theme_mod('phone_1'); ?>"><?php echo get_theme_mod('phone_2'); ?></a>
                         </li>
                         <li>
-                            <a href="tel:"><?php echo get_theme_mod('phone_3'); ?></a>
+                            <a href="tel:<?php echo get_theme_mod('phone_1'); ?>"><?php echo get_theme_mod('phone_3'); ?></a>
                         </li>
                     </ul>
                 </li>
@@ -21,7 +21,7 @@
 
                     <ul class="contact_list">
                         <li>
-                            <a href="mailto:">
+                            <a href="mailto:<?php echo get_theme_mod('email'); ?>">
                                 <?php echo get_theme_mod('email'); ?></a>
                         </li>
                     </ul>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="google_map">
-            <?php echo do_shortcode('[google_map_easy id="2"]')?>
+            <?php echo do_shortcode('[wpgmza id="1"]')?>
         </div>
     </div>
 

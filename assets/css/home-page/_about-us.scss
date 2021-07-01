@@ -38,12 +38,12 @@
             .about_foto {
                 @include size(30%, 100%);
                 text-align: center;
-                box-shadow: inset 33px 0px 20px 7px #d5d7d9d4;
+                box-shadow: inset 0px 0px 39px 4px #f0f1f4;
                 border-radius: 0 0 10% 0;
+                position: relative;
                 img {
                     @include size(100%, 100%);
                     border-radius: 0 0 10% 0;
-                    position: relative;
                     z-index: -2;
                 }
             }
@@ -128,26 +128,26 @@
     .about_us {
         height: auto;
         .about_us_block {
-            @include size(460px, auto);
+            @include size(460px, au0to);
             .about_us_text_foto {
                 flex-direction: column;
-                @include size(460px, auto);
                 margin-top: 100px;
                 .about_us_text {
-                    @include size(100%, 500px);
-                    overflow: auto;
-                    padding: 25px 15px 30px 15px;
+                    width: 100%;
+                    padding-right: 10px;
+                    p {
+                        font-size: 12px
+                    }
                 }
                 .about_foto {
                     width: 100%;
-                    box-shadow: none;
-                    position: absolute;
-                    overflow: hidden;
-                    border-radius: 25% 0 10% 0;
+                    height: 300px;
                     img {
                         width: 100%;
                         height: auto;
-                        filter: blur(4px);
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
                     }
                 }
             }
@@ -163,7 +163,7 @@
                 width: 100%;
                 margin-top: 100px;
                 .about_us_text {
-                    height: 450px;
+                    height: auto;
                     p {
                         font-size: 12px;
                     }
@@ -181,7 +181,6 @@
                 width: 100%;
                 margin-top: 100px;
                 .about_us_text {
-                    height: 400px;
                     padding: 5px 5px 5px 5px;
                     p {
                         font-size: 10px;
