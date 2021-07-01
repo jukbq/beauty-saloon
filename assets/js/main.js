@@ -38,6 +38,7 @@ $(document).ready(function() {
         });
 
 
+
         $('.about_us_text_foto, .service_page_box').each(function() {
             if (is_shown($(this)) == true) {
                 $(this).addClass('aus_text_foto')

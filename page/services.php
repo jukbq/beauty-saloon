@@ -11,11 +11,12 @@
         <h1 class="big_titel">
             <?php the_field( 'service_titel' ); ?>
         </h1>
-        <div class="service_description">
-            <?php the_field( 'service_description' ); ?>
-        </div>
+       
     </div>
     <div class="service_page_main">
+         <div class="service_description">
+            <?php the_field( 'service_description' ); ?>
+        </div>
         <div class="service_body">
             <?php
             $featured_posts = get_field('service_body');
@@ -36,7 +37,7 @@
                         <div class="service_page_block_text">
                             <?php the_field( 'service_page_block_description' ); ?>
                         </div> 
-                        <a class="more_button" href="">Більше</a>
+                   <!--      <a class="more_button" href="">Більше</a> -->
                     </div>
 
 
