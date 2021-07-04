@@ -1,6 +1,6 @@
 /*------------------contact network------------------*/
 
-.social_networks {
+.social_networks_header {
     @include size(65px, auto);
     position: fixed;
     float: left;
@@ -78,10 +78,66 @@
     }
 }
 
+.footer {
+    .footer_block {
+        .social_networks_footer {
+            display: none;
+        }
+    }
+}
+
 .sn_box_close {
     display: none;
 }
 
 .open_sn_bpx {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        .social_networks_header {
+            display: none;
+        }
+    }
+    .footer {
+        .footer_block {
+            .social_networks_footer {
+                @include size(auto, 65px);
+                display: flex;
+                flex-direction: row;
+                .sn_box {
+                    @include size(55px, 55px);
+                    text-align: center;
+                    line-height: 55px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        .footer_block {
+            .social_networks_footer {
+                .sn_box {
+                    @include size(45px, 45px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .footer {
+        .footer_block {
+            .social_networks_footer {
+                .sn_box {
+                    @include size(40px, 40px);
+                    font-size: 24px;
+                }
+            }
+        }
+    }
 }

@@ -794,7 +794,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 /*------------------contact network------------------*/
-.social_networks {
+.social_networks_header {
   width: 65px;
   height: auto;
   position: fixed;
@@ -808,7 +808,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   transition: all 0.8s;
 }
 
-.social_networks .sn_box {
+.social_networks_header .sn_box {
   width: 65px;
   height: 55px;
   text-align: center;
@@ -821,80 +821,84 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   transition: all 0.8s;
 }
 
-.social_networks .facebook {
+.social_networks_header .facebook {
   border: 2px solid #351da1;
   background-image: radial-gradient(circle at 40% 60%, #b1bde6, #244bd6 75%);
 }
 
-.social_networks .facebook:hover {
+.social_networks_header .facebook:hover {
   width: 130px;
 }
 
-.social_networks .instagrann {
+.social_networks_header .instagrann {
   border: 2px solid #6b1039;
   background-image: radial-gradient(circle at 40% 60%, #fa9239, #e6247b 75%);
 }
 
-.social_networks .instagrann:hover {
+.social_networks_header .instagrann:hover {
   width: 130px;
 }
 
-.social_networks .messenger {
+.social_networks_header .messenger {
   border: 2px solid #275195;
   background-image: radial-gradient(circle at 40% 60%, #e1f0f9, #448bff 75%);
 }
 
-.social_networks .messenger:hover {
+.social_networks_header .messenger:hover {
   width: 130px;
 }
 
-.social_networks .viber {
+.social_networks_header .viber {
   border: 2px solid #572485;
   background-image: radial-gradient(circle at 40% 60%, #e6ccfd, #9640e0 75%);
 }
 
-.social_networks .viber:hover {
+.social_networks_header .viber:hover {
   width: 130px;
 }
 
-.social_networks .telegram {
+.social_networks_header .telegram {
   border: 2px solid #145779;
   background-image: radial-gradient(circle at 40% 60%, #c3dfee, #28a8e9 75%);
 }
 
-.social_networks .telegram:hover {
+.social_networks_header .telegram:hover {
   width: 130px;
 }
 
-.social_networks .whatsapp {
+.social_networks_header .whatsapp {
   border: 2px solid #337423;
   background-image: radial-gradient(circle at 40% 60%, #e8f8e4, #62d246 75%);
 }
 
-.social_networks .whatsapp:hover {
+.social_networks_header .whatsapp:hover {
   width: 130px;
 }
 
-.social_networks .youtube {
+.social_networks_header .youtube {
   border: 2px solid #5e0202;
   background-image: radial-gradient(circle at 40% 60%, #be9393, #ff0000 75%);
 }
 
-.social_networks .youtube:hover {
+.social_networks_header .youtube:hover {
   width: 130px;
 }
 
-.social_networks .google_plus {
+.social_networks_header .google_plus {
   border: 2px solid #5f1b15;
   background-image: radial-gradient(circle at 40% 60%, #daaba7, #dc4c40 75%);
 }
 
-.social_networks .google_plus:hover {
+.social_networks_header .google_plus:hover {
   width: 130px;
 }
 
-.social_networks:hover {
+.social_networks_header:hover {
   left: 0px;
+}
+
+.footer .footer_block .social_networks_footer {
+  display: none;
 }
 
 .sn_box_close {
@@ -903,6 +907,45 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 
 .open_sn_bpx {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .header .social_networks_header {
+    display: none;
+  }
+  .footer .footer_block .social_networks_footer {
+    width: auto;
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .footer_block .social_networks_footer .sn_box {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .footer_block .social_networks_footer .sn_box {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 384px) {
+  .footer .footer_block .social_networks_footer .sn_box {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
 }
 
 .about_us {
@@ -940,6 +983,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   height: 100%;
   padding: 30px 0 30px 125px;
   overflow: auto;
+  z-index: 3;
 }
 
 .about_us .about_us_block .about_us_text_foto .about_us_text p {
@@ -955,18 +999,20 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 .about_us .about_us_block .about_us_text_foto .about_foto {
   width: 30%;
   height: 100%;
-  text-align: center;
   -webkit-box-shadow: inset 0px 0px 39px 4px #f0f1f4;
           box-shadow: inset 0px 0px 39px 4px #f0f1f4;
   border-radius: 0 0 10% 0;
-  position: relative;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
 }
 
 .about_us .about_us_block .about_us_text_foto .about_foto img {
-  width: 100%;
+  width: auto;
   height: 100%;
   border-radius: 0 0 10% 0;
-  z-index: -2;
+  position: relative;
+  z-index: -1;
 }
 
 .about_us .about_us_block .aus_text_foto {
@@ -1060,13 +1106,20 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   .about_us .about_us_block .about_us_text_foto .about_foto {
     width: 100%;
     height: 300px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about_us .about_us_block .about_us_text_foto .about_foto img {
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
   }
 }
 
@@ -1192,7 +1245,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .services .service_elenebt .block_title {
-  font-size: 53px;
+  font-size: 48px;
   text-align: center;
   line-height: 90px;
 }
@@ -1392,7 +1445,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .foto_galery .gallery_elenebt .block_title {
-  font-size: 53px;
+  font-size: 48px;
   text-align: center;
   line-height: 90px;
 }
@@ -1547,6 +1600,10 @@ footer .footer_block .google_map {
   border: 4px double black;
 }
 
+footer .social_networks {
+  display: none;
+}
+
 /*-----------------------adaptive--------*/
 @media (max-width: 1200px) {
   footer .footer_block {
@@ -1565,6 +1622,16 @@ footer .footer_block .google_map {
 @media (max-width: 768px) {
   footer .footer_block {
     width: 615px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .footer_block .contact {
     text-align: center;
@@ -2038,7 +2105,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .aus_title {
-  top: 30px;
+  top: 60px;
   visibility: visible;
   z-index: 1;
 }

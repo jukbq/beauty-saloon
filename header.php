@@ -51,7 +51,7 @@
 
 
         <!----------------Social network-------------------->
-        <section class="social_networks">
+        <section class="social_networks_header">
 
             <a class="fb" href="<?php echo get_theme_mod('facebook'); ?>" target="_blank">
                 <div class="sn_box facebook">

@@ -31,6 +31,9 @@
                 border: 4px double black;
             }
         }
+        .social_networks {
+            display: none;
+        }
     }
     /*-----------------------adaptive--------*/
     
@@ -55,6 +58,9 @@
         footer {
             .footer_block {
                 width: 615px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .contact {
                     text-align: center;
                     ul .contact_heading {
