@@ -3,7 +3,7 @@
         <div class="contact">
             <ul>
                 <li class="contact_heading">
-                    <p class="footer_titel"><i class="fas fa-mobile-alt"></i>Телефонии</p>
+                    <p class="footer_titel"><i class="fas fa-mobile-alt"></i>Телефон</p>
                     <ul class="contact_list">
                         <li>
                             <a
@@ -20,7 +20,7 @@
                     </ul>
                 </li>
                 <li class="contact_heading">
-                    <p class="footer_titel"><i class="fas fa-at"></i>Електронна скринька </p>
+                    <p class="footer_titel"><i class="fas fa-at"></i>eMail</p>
 
                     <ul class="contact_list">
                         <li>
@@ -42,7 +42,7 @@
                     </ul>
                 </li>
                 <li class="contact_heading">
-                    <p class="footer_titel"><i class="far fa-clock"></i>Працюємо</p>
+                    <p class="footer_titel"><i class="far fa-clock"></i>Години роботи</p>
                     <ul class="contact_list">
                         <li>
                             <p>Пн-Сб <?php echo get_theme_mod('clock_1'); ?></p>
