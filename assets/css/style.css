@@ -460,13 +460,13 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
   position: absolute;
   border-radius: 15px;
   padding-top: 64px;
-  top: -999px;
-  right: 0;
+  top: 0px;
+  right: 0px;
   bottom: 0;
-  left: -300px;
+  left: 128px;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  z-index: -1;
+  z-index: 2;
 }
 
 .header .wraper .wrap_menu .head_menu #menu_1 {
@@ -517,7 +517,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 }
 
 .header .wraper .wrap_menu .head_menu #menu_1 li:hover ul {
-  left: -300px;
+  left: -400px;
   opacity: 1;
 }
 
@@ -610,7 +610,7 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 .header .wraper .wrap_menu:hover > .menu_icon :nth-child(1) {
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
-  margin-top: 25px;
+  margin-top: 17px;
 }
 
 .header .wraper .wrap_menu:hover > .menu_icon :nth-child(2) {
@@ -620,14 +620,14 @@ footer .footer_block, .service_page .service_page_main .service_page_elenebt .se
 .header .wraper .wrap_menu:hover > .menu_icon :nth-child(3) {
   -webkit-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 
 .header .wraper .wrap_menu:hover > .head_menu {
-  width: 300px;
+  width: 400px;
   height: auto;
   top: 0px;
-  left: -240px;
+  left: -273px;
 }
 
 .header .wraper .wrap_menu:hover > .head_menu #menu_1 {

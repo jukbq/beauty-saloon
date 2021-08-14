@@ -22,9 +22,9 @@
                     position: absolute;
                     border-radius: 15px;
                     padding-top: 64px;
-                    @include trbl(-999px, 0, 0, -300px);
+                    @include trbl(0px, 0px, 0, 128px);
                     transition: all 0.8s;
-                    z-index: -1;
+                    z-index: 2;
                     #menu_1 {
                         @include size(100%, auto);
                         background-color: rgba(128, 128, 128, 0.329);
@@ -60,7 +60,7 @@
                                 background: #899593;
                             }
                             &:hover ul {
-                                left: -300px;
+                                left: -400px;
                                 opacity: 1;
                                 li {
                                     position: static;
@@ -126,20 +126,20 @@
                     transform: rotateZ( 90deg) translate(0px) rotateY( 180deg) rotateX( -180deg);
                      :nth-child(1) {
                         transform: rotateZ( 45deg);
-                        margin-top: 25px;
+                        margin-top: 17px;
                     }
                      :nth-child(2) {
                         opacity: 0;
                     }
                      :nth-child(3) {
                         transform: rotateZ( -45deg);
-                        margin-bottom: 21px;
+                        margin-bottom: 23px;
                     }
                 }
                 &:hover>.head_menu {
-                    @include size(300px, auto);
+                    @include size(400px, auto);
                     top: 0px;
-                    left: -240px;
+                    left: -273px;
                     #menu_1 {
                         visibility: inherit;
                     }
